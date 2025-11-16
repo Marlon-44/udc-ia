@@ -1,0 +1,39 @@
+const btnFiltros = document.getElementById("btnFiltros");
+const panelFiltros = document.getElementById("panelFiltros");
+
+btnFiltros.addEventListener("click", () => {
+    panelFiltros.classList.toggle("visible");
+    panelFiltros.classList.toggle("hidden");
+});
+function cargarCategorias(records) {
+    const categorias = [...new Set(records.map(r => r.categoria))];
+    const select = document.getElementById("filtroCategoria");
+
+    categorias.forEach(cat => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = cat;
+        select.appendChild(opt);
+    });
+}
+function aplicarFiltros() {
+    const nombre = document.getElementById("filtroNombre").value.toLowerCase();
+    const categoria = document.getElementById("filtroCategoria").value;
+
+    filteredRecords = records.filter(item => {
+        return (
+            (!nombre || item.nombre.toLowerCase().includes(nombre)) &&
+            (!categoria || item.categoria === categoria) 
+        );
+    });
+
+    currentPage = 1;
+    renderPage();
+}
+document.getElementById("btnAplicarFiltros").addEventListener("click", aplicarFiltros);
+document.getElementById("btnLimpiarFiltros").addEventListener("click", () => {
+    document.getElementById("filtroNombre").value = "";
+    document.getElementById("filtroCategoria").value = "";
+    filteredRecords = [...records];
+    renderPage();
+});

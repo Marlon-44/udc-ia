@@ -1,0 +1,88 @@
+.footer__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 4rem 0 0 0;
+}
+
+.footer__container {
+    width: 80%;
+    background-color: black;
+    color: #fff;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer__item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.lista__titulo h2 {
+    color: #E79D19;
+    font-size: 1.5rem;
+}
+
+.footer__item .udc__logo{
+    margin: 1rem 0 1rem 0;
+}
+.footer__list {
+    padding: 0;
+    ;
+}
+
+.acreditacion {
+
+    text-align: center;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.acreditacion p {
+    color: #ffffff8a;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer__sistema {
+    width: 100%;
+    background-color: #444444;
+    min-height: 40px;
+    margin-top: 2rem;
+    padding: 0;
+    align-self: flex-end;
+    border-top: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer__sistema a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px){
+    .footer__container{
+        height: auto;
+        flex-wrap: nowrap;
+        max-height: fit-content;
+    }
+    .footer__item{
+        width: 100%;
+    }
+}

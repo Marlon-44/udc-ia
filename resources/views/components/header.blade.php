@@ -1,0 +1,59 @@
+<header class="main__header">
+
+    <div class="header__top">
+        <img src="{{ Vite::asset('resources/images/gov__img.webp') }}" alt="Logo del gobierno" class="gov__icon">
+
+        <div class="header__actions">
+
+            <button class="action-btn">
+                <img src="{{ Vite::asset('resources/images/search__icon.svg') }}" alt="Buscar" class="icon search__icon">
+            </button>
+
+            <button class="action-btn">
+                <img src="{{ Vite::asset('resources/images/world.png') }}" alt="Cambiar idioma" class="icon world__icon">
+            </button>
+
+            <button class="login-btn">
+                <h3>Iniciar Sesión</h3>
+                <img src="{{ Vite::asset('resources/images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon">
+            </button>
+
+            <button class="action-btn nav__btn">
+                <img src="{{ Vite::asset('resources/images/burger__menu.png') }}" alt="Icono usuario" class="icon world__icon">
+            </button>
+
+        </div>
+    </div>
+
+    <div class="header__brand">
+        <a href="">
+            <img src="{{ Vite::asset('resources/images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
+        </a>
+
+        <h2>Repositorio <br>Digital</h2>
+    </div>
+
+    <nav class="header__nav">
+        <a href="/" class="nav__option">Inicio</a>
+        <a href="/contacto" class="nav__option">Comunidades</a>
+        <a href="/nosotros" class="nav__option">Navegar <img src="{{ Vite::asset('resources/images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon"></a>
+        <a href="/" class="nav__option">Estadísticas</a>
+        <a href="/contacto" class="nav__option">Acerca</a>
+        <a href="/nosotros" class="nav__option">Cómo depositar</a>
+        <a href="/" class="nav__option">Políticas</a>
+        <a href="/contacto" class="nav__option">Servicios</a>
+        <a href="/nosotros" class="nav__option">Contactos</a>
+        <div class="nav__item dropdown nav__option">
+            <a href="#" class="nav__option">
+                Biblioteca
+                <img src="{{ Vite::asset('resources/images/dropdown.png') }}" class="icon user__icon">
+            </a>
+
+            <div class="dropdown__menu">
+                <a href="/repositorio">Repositorio</a>
+            </div>
+        </div>
+
+    </nav>
+
+</header>
