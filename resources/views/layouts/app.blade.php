@@ -8,16 +8,7 @@
     <title>@yield('title')</title>
 
     {{-- Cargar Vite SOLO UNA VEZ --}}
-    @vite([
-    'resources/css/app.css',
-    'resources/css/header.css',
-    'resources/js/app.js',
-    'resources/css/bannerBusqueda.css',
-    'resources/css/comunidades.css',
-    'resources/css/repositoriosPagination.css',
-    'resources/css/herramientaCard.css',
-    'resources/css/footer.css'
-    ])
+    @vite(['resources/css/app.css', 'resources/css/header.css', 'resources/js/app.js', 'resources/css/bannerBusqueda.css', 'resources/css/comunidades.css', 'resources/css/repositoriosPagination.css', 'resources/css/herramientaCard.css', 'resources/css/footer.css'])
 
     @stack('styles')
 </head>
@@ -32,7 +23,7 @@
 
     @stack('scripts')
 
-    <x-footer/>
+    <x-footer />
 
 </body>
 
