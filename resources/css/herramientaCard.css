@@ -1,6 +1,6 @@
 .herramienta__card {
     width: 30%;
-    max-width: 30%;
+    /* max-width: 30%; */
     flex-grow: 1;
     background: #ffffff;
     border-radius: 1.2rem;
@@ -16,7 +16,6 @@
 .herramienta__card:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.205);
-
 }
 
 .card__img {
@@ -65,13 +64,13 @@
 }
 
 .herramienta__button {
-    background: #E79D19;
+    background: var(--color-primario);
     color: #fff;
     margin-right: 0.5rem;
 }
 
 .herramienta__button:hover {
-    background: #d48915;
+    background: var(--color-secundario);
     transform: scale(0.98);
 }
 
@@ -84,7 +83,6 @@
     background: #e5e5e5;
     transform: scale(0.98);
 }
-
 
 /* --- ANIMACIÓN DE ENTRADA --- */
 @keyframes fadeInUp {

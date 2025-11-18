@@ -6,10 +6,10 @@ btnFiltros.addEventListener("click", () => {
     panelFiltros.classList.toggle("hidden");
 });
 function cargarCategorias(records) {
-    const categorias = [...new Set(records.map(r => r.categoria))];
+    const categorias = [...new Set(records.map((r) => r.categoria))];
     const select = document.getElementById("filtroCategoria");
 
-    categorias.forEach(cat => {
+    categorias.forEach((cat) => {
         const opt = document.createElement("option");
         opt.value = cat;
         opt.textContent = cat;
@@ -20,20 +20,23 @@ function aplicarFiltros() {
     const nombre = document.getElementById("filtroNombre").value.toLowerCase();
     const categoria = document.getElementById("filtroCategoria").value;
 
-    filteredRecords = records.filter(item => {
+    window.filteredRecords = window.records.filter((item) => {
         return (
             (!nombre || item.nombre.toLowerCase().includes(nombre)) &&
-            (!categoria || item.categoria === categoria) 
+            (!categoria || item.categoria === categoria)
         );
     });
 
-    currentPage = 1;
-    renderPage();
+    window.currentPage = 1;
+    window.renderPage();
 }
-document.getElementById("btnAplicarFiltros").addEventListener("click", aplicarFiltros);
+document
+    .getElementById("btnAplicarFiltros")
+    .addEventListener("click", aplicarFiltros);
 document.getElementById("btnLimpiarFiltros").addEventListener("click", () => {
     document.getElementById("filtroNombre").value = "";
     document.getElementById("filtroCategoria").value = "";
-    filteredRecords = [...records];
-    renderPage();
+    filteredRecords = [...window.records];
+    window.currentPage = 1;
+    window.renderPage();
 });

@@ -4,20 +4,38 @@
     box-sizing: border-box;
 }
 
+/* --- Modificación mínima de la sección (quita background-image y background-color) --- */
 .busqueda__section {
+    position: relative;    /* necesario para posicionar el canvas dentro */
+    overflow: hidden;      /* evita overflow horizontal/vertical */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 500px;
-    background-image: url("/images/udc_background.png");
-    background-size: cover;
-    background-position: center;
-    background-color: aqua;
+    /* background-image: none;  <-- quitado a propósito */
+    /* background-color: none;  <-- quitado a propósito */
     gap: 2rem;
     padding: 5% 0;
 }
+
+/* Canvas con partículas — ocupa toda el área de la sección */
+#particles-bg {
+    position: absolute;
+    inset: 0;              /* top:0; right:0; bottom:0; left:0; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;            /* detrás del contenido de la sección */
+    pointer-events: none;  /* no bloquea clicks/hover del contenido */
+}
+
+/* Hacer que el contenido de la sección quede por encima del canvas */
+.busqueda__section > :not(#particles-bg) {
+    position: relative;
+    z-index: 2;
+}
+
 
 .busqueda__section .titulo {
     display: flex;
@@ -38,9 +56,10 @@
 .titulo h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: var(--color-primario);
 }
 .titulo span {
-    color: #a63c24;
+    color: var(--color-primario);
     font-size: 2.5rem;
 }
 .busqueda {
@@ -136,8 +155,8 @@
     gap: 1rem;
 }
 .rojo {
-    border: 4px solid #a63c24;
-    color: #a63c24;
+    border: 4px solid var(--color-secundario);
+    color: var(--color-secundario);
 }
 .rojo img {
     filter: invert(72%) sepia(86%) saturate(1360%) hue-rotate(343deg)
@@ -145,22 +164,22 @@
 }
 
 .rojo:hover {
-    background-color: #a63c24;
+    background-color: var(--color-secundario);
     color: #fff;
 }
 .rojo:hover img {
     filter: none;
 }
 .amarillo {
-    border: 4px solid #e79d19;
-    color: #e79d19;
+    border: 4px solid var(--color-primario);
+    color: var(--color-primario);
 }
 .amarillo img {
     filter: invert(33%) sepia(74%) saturate(1162%) hue-rotate(341deg)
         brightness(96%) contrast(95%);
 }
 .amarillo:hover {
-    background-color: #e79d19;
+    background-color: var(--color-primario);
     color: #fff;
 }
 .amarillo:hover img {
@@ -179,7 +198,7 @@
 .atajo__box a {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: #e79d19;
+    background-color: var(--color-primario);
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 6rem;
@@ -190,6 +209,9 @@
     color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+.atajo__box a:hover{
+    background-color: var(--color-secundario);
 }
 
 @media (max-width: 768px) {
@@ -209,11 +231,13 @@
     }
     .atajo__box .icon__container {
         width: 40%;
+        
     }
-    .atajo__box h3 {
+    .atajo__box a {
         width: 100%;
+        padding: 1rem 0;
     }
-    .atajo__box h3 br {
+    .atajo__box br {
         display: none;
     }
 }
