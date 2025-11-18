@@ -6,7 +6,8 @@
                 <img src="" alt="">
                 <h2>Datos de Contacto</h2>
             </div>
-            <img src="{{ Vite::asset('resources/images/udc_bw.png') }}" alt="Logo UDC" class="udc__logo">
+            <img src="{{ asset('images/udc_bw.png') }}" alt="Logo UDC" class="udc__logo">
+
             <p>Sede: Claustro de San Agustín, Centro Histórico, Calle de la Universidad Cra. 6 #36-100
                 Colombia, Bolívar, Cartagena</p>
         </div>
@@ -218,7 +219,7 @@
             </ul>
         </div>
 
-        <img src="{{ Vite::asset('resources/images/gov__img.webp') }}" alt="Logo del gobierno" class="gov__icon">
+        <img src="{{ asset('images/gov__img.webp') }}" alt="Logo del gobierno" class="gov__icon">
 
 
     </div>
@@ -230,5 +231,5 @@
         <a href="">Sistema DSPACE 7 - Metabiblioteca |</a>
         <img src="" alt="">
     </div>
-    
+
 </section>

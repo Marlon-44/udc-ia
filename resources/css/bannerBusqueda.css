@@ -11,7 +11,7 @@
     align-items: center;
     width: 100%;
     min-height: 500px;
-    background-image: url("../images/udc__background.png");
+    background-image: url("/images/udc_background.png");
     background-size: cover;
     background-position: center;
     background-color: aqua;
@@ -19,12 +19,11 @@
     padding: 5% 0;
 }
 
-
 .busqueda__section .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -36,15 +35,15 @@
     gap: 1rem;
     margin: 0;
 }
-.titulo h1{
+.titulo h1 {
     font-size: 2.5rem;
     font-weight: 700;
 }
 .titulo span {
-    color: #A63C24;
+    color: #a63c24;
     font-size: 2.5rem;
 }
-.busqueda{
+.busqueda {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -61,7 +60,7 @@
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
@@ -74,9 +73,9 @@
     backdrop-filter: blur(10px);
     border-radius: 3rem;
     padding: 0.8rem 2rem;
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Input */
@@ -101,7 +100,7 @@
     aspect-ratio: 1/1;
     right: 0;
     border-left: 1px solid #fff;
-    border-radius:0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -118,16 +117,16 @@
 .search-icon {
     width: 50%;
     aspect-ratio: 1/1;
-    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(92%) contrast(82%);
-
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%)
+        hue-rotate(177deg) brightness(92%) contrast(82%);
 }
-.atajos__container{
+.atajos__container {
     display: flex;
     justify-content: center;
     gap: 1rem;
     width: 100%;
 }
-.atajo__box{
+.atajo__box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -136,37 +135,38 @@
     flex: 1 1 0;
     gap: 1rem;
 }
-.rojo{
-    border: 4px solid #A63C24;
-    color: #A63C24;
+.rojo {
+    border: 4px solid #a63c24;
+    color: #a63c24;
 }
 .rojo img {
-    filter: invert(72%) sepia(86%) saturate(1360%) hue-rotate(343deg) brightness(95%) contrast(90%);
+    filter: invert(72%) sepia(86%) saturate(1360%) hue-rotate(343deg)
+        brightness(95%) contrast(90%);
 }
 
-
-.rojo:hover{
-    background-color: #A63C24;
+.rojo:hover {
+    background-color: #a63c24;
     color: #fff;
 }
-.rojo:hover img{
+.rojo:hover img {
     filter: none;
 }
-.amarillo{
-    border: 4px solid #E79D19;
-    color: #E79D19;
+.amarillo {
+    border: 4px solid #e79d19;
+    color: #e79d19;
 }
-.amarillo img{
-    filter: invert(33%) sepia(74%) saturate(1162%) hue-rotate(341deg) brightness(96%) contrast(95%);
+.amarillo img {
+    filter: invert(33%) sepia(74%) saturate(1162%) hue-rotate(341deg)
+        brightness(96%) contrast(95%);
 }
-.amarillo:hover{
-    background-color: #E79D19;
+.amarillo:hover {
+    background-color: #e79d19;
     color: #fff;
 }
-.amarillo:hover img{
+.amarillo:hover img {
     filter: none;
 }
-.icon__container{
+.icon__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,10 +176,10 @@
     border-radius: 50%;
     display: none;
 }
-.atajo__box a{
+.atajo__box a {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: #E79D19;
+    background-color: #e79d19;
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 6rem;
@@ -188,34 +188,32 @@
     border: none;
     font-weight: 700;
     color: #fff;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    
 }
 
 @media (max-width: 768px) {
-    .titulo h1{
+    .titulo h1 {
         font-size: 2rem;
     }
-    .titulo span{
+    .titulo span {
         font-size: 2rem;
     }
-    .busqueda{
+    .busqueda {
         width: 90%;
     }
-    .atajos__container{
+    .atajos__container {
         flex-direction: column;
         gap: 1rem;
         width: 80%;
     }
-    .atajo__box .icon__container{
+    .atajo__box .icon__container {
         width: 40%;
     }
-    .atajo__box h3{
+    .atajo__box h3 {
         width: 100%;
     }
-    .atajo__box h3 br{
+    .atajo__box h3 br {
         display: none;
     }
 }
-

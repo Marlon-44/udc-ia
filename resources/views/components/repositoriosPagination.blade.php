@@ -4,7 +4,7 @@
 
             <!-- Botón -->
             <button id="btnFiltros" class="filter__btn">
-                <img src="{{ Vite::asset('resources/images/filter.png') }}" alt="Filtros" class="filter__icon">
+                <img src="{{ asset('images/filter.png') }}" alt="Filtros" class="filter__icon">
                 <span>Filtros</span>
             </button>
 
