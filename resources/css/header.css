@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    background: #E79D19;
+    background: var(--color-primario);
     color: #fff;
 }
 
@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    background-color: #A63C24;
+    background-color: #fff;
     width: 100%;
     min-height: 9rem;
 }
@@ -79,7 +79,8 @@
     font-size: 1.5rem;
     font-weight: 600;
     padding-left: 1rem;
-    border-left: 0.3rem solid #fff;
+    border-left: 0.3rem solid #000;
+    color: #000;
 }
 
 .header__nav {
@@ -104,7 +105,7 @@
 }
 
 .nav__option:hover {
-    background-color: #b87c16;
+    background-color: var(--color-secundario);
 }
 
 
@@ -113,7 +114,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #A63C24;
+    background-color: var(--color-primario);
     border-radius: 0 0 6px 6px;
     opacity: 0;
     transform: translateY(-5px);
@@ -137,7 +138,7 @@
 }
 
 .dropdown__menu a:hover {
-    background-color: #865a0f;
+    background-color: var(--color-secundario);
 }
 
 /* Para que el anchor tenga el mismo estilo que los demás */
@@ -190,7 +191,6 @@
         top: 14.5rem;
         left: 0;
         width: 100%;
-        background-color: #E79D19;
 
         display: flex;
         flex-direction: column;

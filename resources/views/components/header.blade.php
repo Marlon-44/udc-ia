@@ -3,7 +3,6 @@
     <div class="header__top">
         <img src="{{ asset('images/gov__img.webp') }}" alt="Logo del gobierno" class="gov__icon">
 
-
         <div class="header__actions">
 
             <button class="action-btn">
@@ -39,15 +38,16 @@
 
     <nav class="header__nav">
         <a href="{{ asset('/') }}" class="nav__option">Inicio</a>
-        <a href="#" class="nav__option">Comunidades</a>
-        <a href="#" class="nav__option">Navegar <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario"
-                class="icon user__icon"></a>
-        <a href="#" class="nav__option">Estadísticas</a>
-        <a href="#" class="nav__option">Acerca</a>
-        <a href="#" class="nav__option">Cómo depositar</a>
-        <a href="#" class="nav__option">Políticas</a>
-        <a href="#" class="nav__option">Servicios</a>
-        <a href="#" class="nav__option">Contactos</a>
+
+<!-- <a href="#" class="nav__option">Comunidades</a> -->
+<!-- <a href="#" class="nav__option">Navegar <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon"></a> -->
+<!-- <a href="#" class="nav__option">Estadísticas</a> -->
+<!-- <a href="#" class="nav__option">Acerca</a> -->
+<!-- <a href="#" class="nav__option">Cómo depositar</a> -->
+<!-- <a href="#" class="nav__option">Políticas</a> -->
+<!-- <a href="#" class="nav__option">Servicios</a> -->
+<!-- <a href="#" class="nav__option">Contactos</a> -->
+
         <div class="nav__item dropdown nav__option">
             <a href="#" class="nav__option">
                 Biblioteca

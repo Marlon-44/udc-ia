@@ -29,7 +29,7 @@
 }
 
 .lista__titulo h2 {
-    color: #E79D19;
+    color: var(--color-primario);
     font-size: 1.5rem;
 }
 
