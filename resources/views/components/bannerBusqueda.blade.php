@@ -1,4 +1,6 @@
 <section class="busqueda__section">
+    <canvas id="particles-bg" aria-hidden="true"></canvas>
+
     <div class="titulo">
         <h1><span>Repositorio</span> Digital</h1>
     </div>
@@ -73,6 +75,5 @@
 
         </div>
     </div>
-
 
 </section>

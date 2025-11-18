@@ -4,6 +4,6 @@
 
 @section('content')
     @include('components.bannerBusqueda')
-    @include('components.comunidadesSection')
+    
 
 @endsection

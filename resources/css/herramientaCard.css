@@ -64,13 +64,13 @@
 }
 
 .herramienta__button {
-    background: #E79D19;
+    background: var(--color-primario);
     color: #fff;
     margin-right: 0.5rem;
 }
 
 .herramienta__button:hover {
-    background: #d48915;
+    background: var(--color-secundario);
     transform: scale(0.98);
 }
 
