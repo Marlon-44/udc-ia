@@ -1,4 +1,7 @@
-// resources/js/repositoriosPagination.js
+window.records = [];
+window.filteredRecords = [];
+window.currentPage = 1;
+const itemsPerPage = 12;
 
 document.addEventListener("DOMContentLoaded", () => {
     initRepositorio();
@@ -8,14 +11,9 @@ async function initRepositorio() {
     const listEl = document.getElementById("repositorios-list");
     const paginationEl = document.getElementById("pagination-controls");
 
-    let records = [];
-    let currentPage = 1;
-    const itemsPerPage = 12;
-
     // CONFIG flexible según donde esté el JSON
     const MODO_API = false;
-
-    const URL_API = "./api/repositorio";   // Cuando tu compañero lo defina
+    const URL_API = "./api/repositorio"; // Cuando tu compañero lo defina
     const URL_LOCAL = "./data/repositorio.json"; // Archivo estático público
 
     // ⏳ Loading
@@ -23,9 +21,10 @@ async function initRepositorio() {
 
     try {
         const response = await fetch(MODO_API ? URL_API : URL_LOCAL);
-        records = await response.json();
+        window.records = await response.json();
+        window.filteredRecords = [...window.records];
 
-        renderPage();
+        window.renderPage(); // Llama a la función global, no local
     } catch (error) {
         listEl.innerHTML = `
             <div class="alert alert-danger">
@@ -34,98 +33,97 @@ async function initRepositorio() {
         `;
         return;
     }
+}
 
-    function renderPage() {
-        listEl.innerHTML = "";
+// Función de render fuera de initRepositorio
+window.renderPage = function () {
+    const listEl = document.getElementById("repositorios-list");
+    const start = (window.currentPage - 1) * itemsPerPage;
+    const paginatedItems = window.filteredRecords.slice(
+        start,
+        start + itemsPerPage
+    );
 
-        const start = (currentPage - 1) * itemsPerPage;
-        const paginatedItems = records.slice(start, start + itemsPerPage);
+    listEl.innerHTML = "";
 
-        paginatedItems.forEach(reg => {
+    paginatedItems.forEach((reg) => {
+        const videoID = getYoutubeID(reg.video);
+        const thumbnail = videoID
+            ? `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`
+            : "https://via.placeholder.com/300x200?text=Sin+imagen";
 
-            // Obtener ID del video
-            const videoID = getYoutubeID(reg.video);
-            const thumbnail = videoID
-                ? `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`
-                : "https://via.placeholder.com/300x200?text=Sin+imagen"; // fallback seguro
+        const nombre = reg.nombre ?? "Sin nombre";
+        const descripcion = reg.descripcion ?? "Sin descripción";
+        const enlace = reg.enlace ?? "#";
+        const video = reg.video ?? "#";
 
-            // Sanear campos vacíos
-            const nombre = reg.nombre ?? "Sin nombre";
-            const descripcion = reg.descripcion ?? "Sin descripción";
-            const enlace = reg.enlace ?? "#";
-            const video = reg.video ?? "#";
-
-            const card = `
-            
-                <div class="herramienta__card">
-                    <img src="${thumbnail}" alt="Miniatura del video" class="card__img">
-
-                    <div class="herramienta__card__content">
-                        <h5 class="herramienta__card__title">${nombre}</h5>
-                        <p class="herramienta__card__description">${descripcion}</p>
-
-                        <div class="herramienta__card__buttons">
-                            <a href="${enlace}" target="_blank" class="herramienta__button">Herramienta</a>
-                            <a href="${video}" target="_blank" class="video__button">Video</a>
-                        </div>
+        const card = `
+            <div class="herramienta__card">
+                <img src="${thumbnail}" alt="Miniatura del video" class="card__img">
+                <div class="herramienta__card__content">
+                    <h5 class="herramienta__card__title">${nombre}</h5>
+                    <p class="herramienta__card__description">${descripcion}</p>
+                    <div class="herramienta__card__buttons">
+                        <a href="${enlace}" target="_blank" class="herramienta__button">Herramienta</a>
+                        <a href="${video}" target="_blank" class="video__button">Video</a>
                     </div>
                 </div>
+            </div>
         `;
 
-            listEl.insertAdjacentHTML("beforeend", card);
-        });
+        listEl.insertAdjacentHTML("beforeend", card);
+    });
 
-        renderPagination();
-    }
+    window.renderPagination();
+};
 
-
-    function getYoutubeID(url) {
-        if (!url) return null;
-
-        const regex = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([^?&]+)/;
-        const match = url.match(regex);
-
-        return match ? match[1] : null;
-    }
-
-
-    function renderPagination() {
-        paginationEl.innerHTML = "";
-
-        const totalPages = Math.ceil(records.length / itemsPerPage);
-
-        // Botón anterior
-        paginationEl.innerHTML += `
-            <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
-                <button class="page-link" data-page="${currentPage - 1}"> Anterior </button>
-            </li>
-        `;
-
-        // Números
-        for (let i = 1; i <= totalPages; i++) {
-            paginationEl.innerHTML += `
-                <li class="page-item ${i === currentPage ? "active" : ""}">
-                    <button class="page-link" data-page="${i}">${i}</button>
-                </li>
-            `;
-        }
-
-        // Botón siguiente
-        paginationEl.innerHTML += `
-            <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
-                <button class="page-link" style='color: #E79D19' data-page="${currentPage + 1}"> Siguiente </button>
-            </li>
-        `;
-
-        // Listeners
-        paginationEl.querySelectorAll("button[data-page]").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const page = parseInt(btn.dataset.page);
-                if (page > 0) {
-                    currentPage = page;
-                    renderPage();
-                }
-            });
-        });
-    }
+function getYoutubeID(url) {
+    if (!url) return null;
+    const regex =
+        /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([^?&]+)/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
 }
+
+window.renderPagination = function () {
+    const paginationEl = document.getElementById("pagination-controls");
+    paginationEl.innerHTML = "";
+
+    const totalPages = Math.ceil(window.filteredRecords.length / itemsPerPage);
+
+    paginationEl.innerHTML += `
+        <li class="page-item ${window.currentPage === 1 ? "disabled" : ""}">
+            <button class="page-link" data-page="${
+                window.currentPage - 1
+            }">Anterior</button>
+        </li>
+    `;
+
+    for (let i = 1; i <= totalPages; i++) {
+        paginationEl.innerHTML += `
+            <li class="page-item ${i === window.currentPage ? "active" : ""}">
+                <button class="page-link" data-page="${i}">${i}</button>
+            </li>
+        `;
+    }
+
+    paginationEl.innerHTML += `
+        <li class="page-item ${
+            window.currentPage === totalPages ? "disabled" : ""
+        }">
+            <button class="page-link" style='color: #E79D19' data-page="${
+                window.currentPage + 1
+            }">Siguiente</button>
+        </li>
+    `;
+
+    paginationEl.querySelectorAll("button[data-page]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const page = parseInt(btn.dataset.page);
+            if (page > 0 && page <= totalPages) {
+                window.currentPage = page;
+                window.renderPage();
+            }
+        });
+    });
+};
