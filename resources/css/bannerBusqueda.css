@@ -11,10 +11,10 @@
     align-items: center;
     width: 100%;
     min-height: 500px;
-    background-image: url("/images/udc_background.png");
+    background-image: url("https://catalogoia.unicartagena.edu.co/public/images/udc_background.png");
     background-size: cover;
     background-position: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     gap: 2rem;
     padding: 5% 0;
 }
