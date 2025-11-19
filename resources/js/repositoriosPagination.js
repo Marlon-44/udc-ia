@@ -56,8 +56,12 @@ window.renderPage = function () {
         const descripcion = reg.descripcion ?? "Sin descripción";
         const enlace = reg.enlace ?? "#";
         const video = reg.video ?? "#";
+        const BASE_URL = "/udc-ia/public";
 
         const card = `
+        <a href="${BASE_URL}/info/${encodeURIComponent(
+            nombre
+        )}" target="_blank" class="herramienta__link">
             <div class="herramienta__card">
                 <img src="${thumbnail}" alt="Miniatura del video" class="card__img">
                 <div class="herramienta__card__content">
@@ -69,6 +73,8 @@ window.renderPage = function () {
                     </div>
                 </div>
             </div>
+        </a>
+
         `;
 
         listEl.insertAdjacentHTML("beforeend", card);
