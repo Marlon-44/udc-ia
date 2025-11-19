@@ -17,5 +17,15 @@
                 <a href="{{ $info['video'] }}" target="_blank" class="btn btn-secondary">Video tutorial</a>
             @endif
         </p>
+
+        @if (!empty($info['video_embed']))
+            <div style="margin-top:2rem;text-align:center;">
+                <iframe width="560" height="315" src="{{ $info['video_embed'] }}" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        @endif
     </div>
 @endsection

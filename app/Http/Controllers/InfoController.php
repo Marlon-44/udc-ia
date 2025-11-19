@@ -9,17 +9,30 @@ class InfoController extends Controller
 {
     public function show($nombre)
     {
-        // Ruta al archivo JSON (ajusta si necesario)
         $json = File::get(public_path('data/repositorio.json'));
         $records = json_decode($json, true);
+        $info = collect($records)->first(function ($item) use ($nombre) {
+            return strtolower($item['nombre']) === strtolower(urldecode($nombre));
+        });
 
-        // Buscar por nombre (case sensitive)
-        $info = collect($records)->firstWhere('nombre', urldecode($nombre));
-
-        if (!$info) {
-            abort(404, 'Herramienta no encontrada');
+        // Convertir el video a embebido
+        if (!empty($info['video'])) {
+            $info['video_embed'] = $this->getYoutubeEmbed($info['video']);
         }
 
         return view('infoCard', compact('info'));
+    }
+
+    // Helper (puedes poner en mismo controlador o en un helper global)
+    function getYoutubeEmbed($url)
+    {
+        if (strpos($url, 'youtu.be/') !== false) {
+            $id = substr($url, strrpos($url, '/') + 1);
+        } elseif (preg_match('/v=([^&]+)/', $url, $matches)) {
+            $id = $matches[1];
+        } else {
+            $id = $url;
+        }
+        return 'https://www.youtube.com/embed/' . $id;
     }
 }
