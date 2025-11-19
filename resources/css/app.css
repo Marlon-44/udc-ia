@@ -39,11 +39,10 @@ a {
     --color-secundario: #1c4aad;
 }
 
-
 .spinner {
     width: 48px;
     height: 48px;
-    border: 5px solid #e79d19;
+    border: 5px solid var(--color-primario);
     border-top: 5px solid #fff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
