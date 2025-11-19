@@ -4,5 +4,6 @@ import "../css/app.css";
 import "./bannerBusqueda";
 import "./bootstrap";
 import "./filtros";
-import "./mobileMenu";
 import "./repositoriosPagination";
+import "./mobileMenu";
+

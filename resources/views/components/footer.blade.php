@@ -6,13 +6,10 @@
                 <img src="" alt="">
                 <h2>Datos de Contacto</h2>
             </div>
-            <img src="{{ asset('images/udc_bw.png') }}" alt="Logo UDC" class="udc__logo">
+            <img src="{{ asset('images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
 
             <p>Sede: Claustro de San Agustín, Centro Histórico, Calle de la Universidad Cra. 6 #36-100
                 Colombia, Bolívar, Cartagena</p>
-        </div>
-
-        <div class="footer__item">
             <div class="lista__titulo">
                 <img src="" alt="">
                 <h2>Linea de Atencion</h2>
@@ -20,6 +17,8 @@
             <p>(+57) 3164390360</p>
         </div>
 
+
+        <!--
         <div class="footer__item">
             <div class="lista__titulo">
                 <img src="" alt="">
@@ -162,6 +161,7 @@
                 <li class="footer__item__list">Resultados Posgrado</li>
             </ul>
         </div>
+
         <div class="footer__item">
             <div class="lista__titulo">
                 <img src="" alt="">
@@ -178,7 +178,7 @@
                 <li class="footer__item__list">Ventanillas de Atención</li>
             </ul>
         </div>
-
+-->
         <div class="footer__item">
             <div class="lista__titulo">
                 <img src="" alt="">
@@ -194,8 +194,6 @@
                 <li class="footer__item__list">Rendición de Cuentas</li>
                 <li class="footer__item__list">Elecciones</li>
             </ul>
-        </div>
-        <div class="footer__item">
             <div class="lista__titulo">
                 <img src="" alt="">
                 <h2>Certificaciones</h2>
@@ -217,19 +215,25 @@
                 </li>
                 <li class="footer__item__list">juridica@unicartagena.edu.co</li>
             </ul>
+            <div class="logos">
+                <img src="{{ asset('images/mintic.svg') }}" alt="Logo del gobierno" class="mintic__icon">
+                <img src="{{ asset('images/gov.png') }}" alt="Logo del gobierno" class="gov__icon">
+            </div>
+
+
         </div>
 
-        <img src="{{ asset('images/gov__img.webp') }}" alt="Logo del gobierno" class="gov__icon">
+
 
 
     </div>
     <div class="acreditacion">
-        <p class="acreditacion">Acreditación Institucional de Alta Calidad</p>
-        <p class="acreditacion">Resolución N° 003095 del 18 de marzo de 2024. Ministerio de Educación Nacional</p>
+        <p>Acreditación Institucional de Alta Calidad</p>
+        <p>Resolución N° 003095 del 18 de marzo de 2024. Ministerio de Educación Nacional</p>
     </div>
     <div class="footer__sistema">
         <a href="">Sistema DSPACE 7 - Metabiblioteca |</a>
-        <img src="" alt="">
+        <img src="{{ asset('images/govco.png') }}" alt="">
     </div>
 
 </section>

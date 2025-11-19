@@ -23,6 +23,7 @@ async function initRepositorio() {
         const response = await fetch(MODO_API ? URL_API : URL_LOCAL);
         window.records = await response.json();
         window.filteredRecords = [...window.records];
+        cargarCategorias(window.records)
 
         window.renderPage(); // Llama a la función global, no local
     } catch (error) {
@@ -31,6 +32,8 @@ async function initRepositorio() {
                 Error cargando los registros.
             </div>
         `;
+        console.error("ERROR FETCH:", error);
+
         return;
     }
 }

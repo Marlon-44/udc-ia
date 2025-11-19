@@ -4,20 +4,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    padding: 4rem 0 0 0;
+    height: fit-content;
+
 }
 
 .footer__container {
     width: 80%;
-    background-color: black;
-    color: #fff;
-    max-height: 100vh;
+    background-color: #fff;
+    color: #000;
+    max-height: 70%;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
     box-sizing: border-box;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px var(--color-secundario);
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+    bottom: -50px;
 }
 
 .footer__item {
@@ -26,6 +32,24 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.footer__item .logos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 80px;
+
+
+}
+.logos .minti__icon{
+    max-width: 30%;
+}
+.logos .gov__icon {
+    max-width: 60%;
+    box-sizing: border-box;
+
 }
 
 .lista__titulo h2 {
@@ -33,9 +57,10 @@
     font-size: 1.5rem;
 }
 
-.footer__item .udc__logo{
+.footer__item .udc__logo {
     margin: 1rem 0 1rem 0;
 }
+
 .footer__list {
     padding: 0;
     ;
@@ -44,21 +69,28 @@
 .acreditacion {
 
     text-align: center;
-    padding: 0;
-    margin-top: 2rem;
+    margin-top: -15rem;
+    z-index: 1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    background-color: var(--color-secundario);
+    padding: 2rem 0;
 }
 
 .acreditacion p {
-    color: #ffffff8a;
+    color: #fff;
     font-weight: 600;
     margin: 0;
 }
 
 .footer__sistema {
     width: 100%;
-    background-color: #444444;
+    background-color: var(--color-primario);
     min-height: 40px;
-    margin-top: 2rem;
     padding: 0;
     align-self: flex-end;
     border-top: 3px solid #fff;
@@ -76,13 +108,14 @@
     padding: 0;
 }
 
-@media (max-width: 768px){
-    .footer__container{
+@media (max-width: 768px) {
+    .footer__container {
         height: auto;
         flex-wrap: nowrap;
         max-height: fit-content;
     }
-    .footer__item{
+
+    .footer__item {
         width: 100%;
     }
 }

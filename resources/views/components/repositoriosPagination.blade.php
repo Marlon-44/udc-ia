@@ -1,4 +1,5 @@
 <div id="repositorios-wrapper" class="herramientas__section">
+
     <div class="herramientas__header">
         <div class="herramientas__header">
 
@@ -8,32 +9,35 @@
                 <span>Filtros</span>
             </button>
 
-            <h1 class="pagination__title">Repositorio Digital</h1>
+            <div class="titulo">
+                <h1><span>Repositorio</span> Digital</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+
+                <!-- Lupa que también aplica el filtro -->
+                <img id="iconoBuscar" src="{{ asset('images/search__icon.svg') }}" alt="Buscar" class="search-icon">
+            </div>
+
+            <div class="filters-actions">
+                <p>Buscar por: </p>
+                
+                <select class="filter__option__btn" id="filtroCategoria">
+                    <option value="">Categorias</option>
+                </select>
+                <button id="btnAplicarFiltros" class="filter__option__btn buscar"> Buscar</button>
+                <button id="btnLimpiarFiltros" class="filter__option__btn">Limpiar</button>
+
+            </div>
         </div>
 
-        <!-- Panel de filtros -->
+        <!-- Panel de filtros 
         <div id="panelFiltros" class="filters-panel hidden">
 
             <h3>Filtrar Resultados</h3>
 
-            <div class="filter-group">
-                <label for="filtroNombre">Nombre</label>
-                <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
-            </div>
-
-            <div class="filter-group">
-                <label for="filtroCategoria">Categoría</label>
-                <select id="filtroCategoria">
-                    <option value="">Todas</option>
-                </select>
-            </div>
-
-            <div class="filters-actions">
-                <button id="btnAplicarFiltros" class="btn-apply">Aplicar</button>
-                <button id="btnLimpiarFiltros" class="btn-clear">Limpiar</button>
-            </div>
-
-        </div>
+        </div>-->
 
 
 
