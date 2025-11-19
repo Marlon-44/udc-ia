@@ -52,7 +52,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-
 }
 
 .login-btn h3 {
@@ -65,23 +64,53 @@
     display: none;
 }
 
+/* ============================================= */
+/*            BRAND LOGOS Y TITULO               */
+/* ============================================= */
+
 .header__brand {
     display: flex;
+    flex-direction: row; /* Siempre en fila */
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.2rem;
     background-color: #fff;
     width: 100%;
     min-height: 9rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .header__brand h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    padding-left: 1rem;
-    border-left: 0.3rem solid #000;
+    padding-left: 1.2rem;
+    border-left: 0.3rem solid #e79d19;
     color: #000;
+    margin: 0;
+    min-width: 120px;
 }
+
+.udc__logo {
+    width: 94px;
+    max-width: 100%;
+    min-width: 20%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.minTic__logo {
+    width: 94px;
+    max-width: 23vw;
+    min-width: 68px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ============================================= */
+/*       NAVBAR Y DROPDOWN USUAL                 */
+/* ============================================= */
 
 .header__nav {
     display: flex;
@@ -107,7 +136,6 @@
 .nav__option:hover {
     background-color: var(--color-secundario);
 }
-
 
 .dropdown__menu {
     width: 100%;
@@ -141,7 +169,6 @@
     background-color: var(--color-secundario);
 }
 
-/* Para que el anchor tenga el mismo estilo que los demás */
 .nav__option {
     color: #fff;
     font-weight: 600;
@@ -150,75 +177,44 @@
     gap: 0.4rem;
 }
 
-@media (max-width: 768px) {
+/* ============================================= */
+/*                  RESPONSIVO                   */
+/* ============================================= */
 
-    .header__top{
+/* NO cambiamos a columna en móvil para que SIEMPRE estén alineados en horizontal */
+@media (max-width: 768px) {
+    .header__top {
         justify-content: space-between;
         padding: 0 1rem;
     }
-    .header__top .action-btn{
+    .header__top .action-btn {
         height: 50%;
     }
-    .gov__icon{
+    .gov__icon {
         padding: 0.4rem 0;
     }
     .nav__btn {
         display: block;
     }
-    .header__brand{
-        flex-direction: column;
-        min-height: 12rem;
-        align-items: center;
-        justify-content: center;
+    .header__brand {
         gap: 1rem;
-        padding: 0;
-        margin: 0;
+        min-height: 7rem;
+        padding: 1.2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .udc__logo{
+    .minTic__logo {
+        width: 64px;
+        max-width: 29vw;
+    }
+    .udc__logo {
         width: 50%;
     }
-    .header__brand h2{
-        border: none;
-        border-top: 0.3rem solid #fff;
-        padding: 0.5rem 1rem;
+    .header__brand h2 {
+        font-size: 1rem;
+        border-left: 0.18rem solid #e79d19;
+        padding-left: 0.5rem;
+        min-width: 80px;
     }
-    .header__brand br{
-        display: none;
-    }
-
-    .header__nav {
-        position: absolute;
-        top: 14.5rem;
-        left: 0;
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 0;
-
-        min-height: 0;
-        opacity: 0;
-        visibility: hidden;
-
-        transition: min-height 0.3s ease, opacity 0.3s ease;
-        z-index: 9999;
-    }
-
-    .header__nav.show {
-        min-height: 500px;
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    .nav__option {
-        display: flex;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
+    /* No usar flex-direction: column aquí */
 }
