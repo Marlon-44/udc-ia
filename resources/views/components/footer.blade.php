@@ -227,9 +227,9 @@
         <p class="acreditacion">Acreditación Institucional de Alta Calidad</p>
         <p class="acreditacion">Resolución N° 003095 del 18 de marzo de 2024. Ministerio de Educación Nacional</p>
     </div>
-    <div class="footer__sistema">
+    {{-- <div class="footer__sistema">
         <a href="">Sistema DSPACE 7 - Metabiblioteca |</a>
         <img src="" alt="">
-    </div>
+    </div> --}}
 
 </section>
