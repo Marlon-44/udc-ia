@@ -62,6 +62,10 @@
     transition: background 0.25s ease, transform 0.25s ease;
 }
 
+.herramienta__link {
+    text-decoration: none;
+}
+
 .herramienta__button {
     background: var(--color-primario);
     color: #fff;
