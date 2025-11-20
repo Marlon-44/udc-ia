@@ -197,15 +197,15 @@
         display: block;
     }
     .header__brand {
-        gap: 1rem;
+        gap: 3rem;
         min-height: 7rem;
         padding: 1.2rem;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .minTic__logo {
         width: 64px;
-        max-width: 29vw;
     }
     .udc__logo {
         width: 50%;
@@ -216,5 +216,5 @@
         padding-left: 0.5rem;
         min-width: 80px;
     }
-    /* No usar flex-direction: column aquí */
+    
 }

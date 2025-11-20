@@ -30,7 +30,7 @@
 
     <div class="header__brand">
         <img src="{{ asset('images/Logo MinTic.png') }}" alt="Logo MinTic" class="minTic__logo">
-        <h2></h2>
+        
         <img src="{{ asset('images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
     </div>
 
