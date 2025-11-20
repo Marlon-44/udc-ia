@@ -18,7 +18,11 @@
     gap: 1.5rem;
 }
 
-.titulo{
+.repositorios-list {
+    width: 100%;
+}
+
+.titulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +43,8 @@
 .search-icon {
     width: 2%;
     aspect-ratio: 1/1;
-    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(92%) contrast(82%);
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%)
+        hue-rotate(177deg) brightness(92%) contrast(82%);
     cursor: pointer;
 }
 
@@ -73,7 +78,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid var(--color-primario);
     padding: 0.6rem 1rem;
@@ -141,7 +146,7 @@
 
 .filter-group input,
 .filter-group select {
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid var(--color-primario);
     padding: 0.4rem 0.6rem;
     border-radius: 8px;
@@ -156,13 +161,12 @@
     align-items: center;
 }
 
-.filters-actions p{
+.filters-actions p {
     font-weight: 600;
     margin: 0;
     padding: 0;
 }
 .filter__option__btn {
-    
     width: 15%;
     border: none;
     padding: 0.6rem;
@@ -171,12 +175,12 @@
     cursor: pointer;
     background: #f0f0f0;
 }
-.buscar{
+.buscar {
     background-color: var(--color-primario);
     color: #fff;
     transition: ease-in 0.2s;
 }
-.buscar:hover{
+.buscar:hover {
     background-color: var(--color-secundario);
     transform: scale(0.98);
 }
@@ -189,7 +193,6 @@
     outline: none;
     cursor: pointer;
 }
-
 
 .pagination__title {
     align-self: flex-end;
@@ -228,9 +231,7 @@
 }
 
 @media (max-width: 768px) {
-    
     .herramientas__header .pagination__title {
-
         text-align: right;
     }
 
@@ -256,13 +257,13 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-    .filters-actions{
+    .filters-actions {
         flex-direction: column;
     }
-    .filter__option__btn{
+    .filter__option__btn {
         width: 100%;
     }
     .search-icon {
-    width: 6%;
-}
+        width: 6%;
+    }
 }
