@@ -113,6 +113,7 @@
         height: auto;
         flex-wrap: nowrap;
         max-height: fit-content;
+        flex-direction: column;
     }
 
     .footer__item {
