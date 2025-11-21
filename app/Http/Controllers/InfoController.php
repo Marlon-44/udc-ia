@@ -23,8 +23,7 @@ class InfoController extends Controller
         return view('infoCard', compact('info'));
     }
 
-    // Helper (puedes poner en mismo controlador o en un helper global)
-    function getYoutubeEmbed($url)
+    private function getYoutubeEmbed($url)
     {
         if (strpos($url, 'youtu.be/') !== false) {
             $id = substr($url, strrpos($url, '/') + 1);
