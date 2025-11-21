@@ -36,11 +36,10 @@
 }
 
 /* Hacer que el contenido de la sección quede por encima del canvas */
-.busqueda__section> :not(#particles-bg) {
+.busqueda__section > :not(#particles-bg) {
     position: relative;
     z-index: 2;
 }
-
 
 .busqueda__section .titulo {
     display: flex;
@@ -62,7 +61,7 @@
 .titulo h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-primario);
+    /* color: var(--color-primario); */
 }
 
 .titulo span {
@@ -142,7 +141,6 @@
 
 /* Icono */
 
-
 .atajos__container {
     display: flex;
     justify-content: center;
@@ -166,7 +164,8 @@
 }
 
 .rojo img {
-    filter: invert(72%) sepia(86%) saturate(1360%) hue-rotate(343deg) brightness(95%) contrast(90%);
+    filter: invert(72%) sepia(86%) saturate(1360%) hue-rotate(343deg)
+        brightness(95%) contrast(90%);
 }
 
 .rojo:hover {
@@ -184,7 +183,8 @@
 }
 
 .amarillo img {
-    filter: invert(33%) sepia(74%) saturate(1162%) hue-rotate(341deg) brightness(96%) contrast(95%);
+    filter: invert(33%) sepia(74%) saturate(1162%) hue-rotate(341deg)
+        brightness(96%) contrast(95%);
 }
 
 .amarillo:hover {
@@ -227,10 +227,6 @@
     background-color: var(--color-secundario);
 }
 
-
-
-
-
 .img__nav {
     display: flex;
     width: 70%;
@@ -249,7 +245,7 @@
     text-decoration: none;
     color: white;
     transform: scale(1);
-    transition: transform .4s ease, box-shadow .4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .img__link img {
@@ -268,14 +264,15 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 1.5rem;
-    gap: .5rem;
+    gap: 0.5rem;
     color: white;
     z-index: 2;
+    /* color: var(--color-primario); */
 }
 
 /* Pseudo-elemento para crear el blur degradado REAL */
 .cover::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -284,20 +281,22 @@
 
     backdrop-filter: blur(48px);
     -webkit-backdrop-filter: blur(48px);
-    mask-image: linear-gradient(to bottom,
-            transparent 0%,
-            /* Arriba: Completamente transparente (oculta el blur) */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        /* Arriba: Completamente transparente (oculta el blur) */
             rgba(0, 0, 0, 0.5) 50%,
-            /* Mitad: Transición (el blur empieza a verse) */
-            black 100%
+        /* Mitad: Transición (el blur empieza a verse) */ black 100%
             /* Abajo: Completamente opaco (el blur se ve al máximo) */
-        );
+    );
 
     /* Alternativa para la máscara por si es necesario (webkit) */
-    -webkit-mask-image: linear-gradient(to bottom,
-            transparent 0%,
-            rgba(0, 0, 0, 0.5) 50%,
-            black 100%);
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        black 100%
+    );
 }
 
 .cover h3 {
@@ -309,7 +308,7 @@
 
 .cover p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     z-index: 2;
 }
 
@@ -319,11 +318,8 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.212);
 }
 
-
-
 @media (max-width: 768px) {
-
-    .busqueda__section{
+    .busqueda__section {
         padding-top: 1rem;
     }
 
@@ -347,7 +343,6 @@
 
     .atajo__box .icon__container {
         width: 40%;
-
     }
 
     .atajo__box a {
@@ -380,5 +375,4 @@
         font-size: 14px;
         z-index: 2;
     }
-
 }
