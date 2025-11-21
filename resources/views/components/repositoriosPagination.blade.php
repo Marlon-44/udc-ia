@@ -22,7 +22,7 @@
 
             <div class="filters-actions">
                 <p>Buscar por: </p>
-                
+
                 <select class="filter__option__btn" id="filtroCategoria">
                     <option value="">Categorias</option>
                 </select>
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <!-- Panel de filtros 
+        <!-- Panel de filtros
         <div id="panelFiltros" class="filters-panel hidden">
 
             <h3>Filtrar Resultados</h3>

@@ -2,11 +2,11 @@
 
 
     <div class="titulo">
-        <h1>Catalogo Digital IA</h1>
+        <h1>Casos de uso herramientas IA</h1>
     </div>
 
     <div class="img__nav">
-        <a href="{{ asset('/repositorio') }}" class="img__link">
+        {{-- <a href="{{ asset('/repositorio') }}" class="img__link">
             <img src="{{ asset('images/ia.jpeg') }}" alt="">
             <div class="cover">
                 <h3>Repositorio Digital</h3>
@@ -20,7 +20,7 @@
                 <h3>PDF</h3>
                 <p>Explora multiples casos de aplicacion de herramientas de IA</p>
             </div>
-        </a>
+        </a> --}}
     </div>
 
 
