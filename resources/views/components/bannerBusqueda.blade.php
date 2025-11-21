@@ -1,33 +1,33 @@
-<section class="busqueda__section">
-    
+<section class="busqueda__section" style="background-image: url('images/bg.jpg')">
+
 
     <div class="titulo">
-        <h1>Biblioteca Digital IA</h1>
+        <h1>Catalogo Digital IA</h1>
     </div>
 
     <div class="img__nav">
-    <a href="{{ asset('/repositorio') }}" class="img__link">
-        <img src="{{ asset('images/ia.jpeg') }}" alt="">
-        <div class="cover">
-            <h3>Repositorio Digital</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta at labore tempora vitae id dolores,</p>
-        </div>
-    </a>
+        <a href="{{ asset('/repositorio') }}" class="img__link">
+            <img src="{{ asset('images/ia.jpeg') }}" alt="">
+            <div class="cover">
+                <h3>Repositorio Digital</h3>
+                <p>Encuentra la IA que mejor se adapte a ti y a tu empresa</p>
+            </div>
+        </a>
 
-    <a href="{{ asset('/') }}" class="img__link">
-        <img src="{{ asset('images/pdf__img.jpeg') }}" alt="">
-        <div class="cover">
-            <h3>PDF</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta at labore tempora vitae id dolores,</p>
-        </div>
-    </a>
-</div>
+        <a href="{{ asset('/') }}" class="img__link">
+            <img src="{{ asset('images/pdf__img.jpeg') }}" alt="">
+            <div class="cover">
+                <h3>PDF</h3>
+                <p>Explora multiples casos de aplicacion de herramientas de IA</p>
+            </div>
+        </a>
+    </div>
 
-    
+
     <!--
     <canvas id="particles-bg" aria-hidden="true"></canvas>
     <div class="busqueda">
-        
+
         <form class="search-bar" action="#" method="GET">
             <label for="search" class="sr-only">Buscar</label>
 
@@ -37,7 +37,7 @@
                 <img src="{{ asset('images/search__icon.svg') }}" alt="Buscar" class="search-icon">
 
             </button>
-            
+
         </form>
 
         <div class="atajos__container">
