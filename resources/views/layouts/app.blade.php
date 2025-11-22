@@ -8,7 +8,17 @@
     <title>@yield('title')</title>
 
     {{-- Cargar Vite SOLO UNA VEZ --}}
-    @vite(['resources/css/app.css', 'resources/css/header.css', 'resources/js/app.js', 'resources/css/bannerBusqueda.css', 'resources/css/comunidades.css', 'resources/css/repositoriosPagination.css', 'resources/css/herramientaCard.css', 'resources/css/footer.css'])
+    @vite([
+        'resources/css/app.css', 
+        'resources/css/header.css', 
+        'resources/js/app.js', 
+        'resources/css/bannerBusqueda.css', 
+        'resources/css/comunidades.css', 
+        'resources/css/repositoriosPagination.css', 
+        'resources/css/herramientaCard.css', 
+        'resources/css/footer.css',
+        'resources/css/carpetaCard.css',
+        'resources/css/pdfs.css'])
 
     @stack('styles')
 </head>
@@ -45,6 +55,8 @@
             var loader = document.getElementById('loader');
             if (loader) loader.style.display = 'none';
         });
+            window.JSON_URL = "{{ asset('data/carpetasPdf.json') }}";
+
     </script>
 
 </body>

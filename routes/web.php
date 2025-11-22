@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InfoController;
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,10 +14,10 @@ Route::get('/repositorio', function () {
     return view('repositorio');
 });
 
-Route::get('/herramientas', function () {
-    return view('herramientas');
+Route::get('/carpetas', function () {
+    return view('carpetasPdf');
 });
 
-Route::get('/herramientas/{nombre}', function () {
-    return view('about');
-});
+Route::get('/pdfs/{id}', [PdfController::class, 'show'])->name('pdfs.show');
+
+

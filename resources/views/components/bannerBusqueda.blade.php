@@ -2,7 +2,7 @@
 
 
     <div class="titulo">
-        <h1>Catalogo Digital IA</h1>
+        <h1 style="color: #fff">Catalogo Digital IA</h1>
     </div>
 
     <div class="img__nav">
@@ -14,7 +14,7 @@
             </div>
         </a>
 
-        <a href="{{ asset('/herramientas') }}" class="img__link">
+        <a href="{{ asset('/carpetas') }}" class="img__link">
             <img src="{{ asset('images/pdf__img.jpeg') }}" alt="">
             <div class="cover">
                 <h3>PDF</h3>

@@ -1,0 +1,43 @@
+.pdf-page{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.pdf-page .titulo{
+    width: fit-content;
+    align-self: center;
+}
+.pdf__list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap : 2rem;
+    align-self: center;   
+
+}
+.pdf{
+    width: 20%;
+}
+.pdf a{
+    width: 100%;
+    border-radius: 6rem;
+    background-color: var(--color-primario);
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-between;
+    transition:  ease-in 0.2s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pdf a img{
+    width: 24px;
+}
+.pdf a:hover{
+    background-color: var(--color-secundario);
+    transform: scale(0.98);
+}

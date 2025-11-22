@@ -3,7 +3,9 @@
 @section('title', 'Repositorio Digital | Univesidad de Cartagena | Inicio')
 
 @section('content')
-    @include('components.pdf')
+    @include('components.carpetasNav')
 
 
 @endsection
+
+
