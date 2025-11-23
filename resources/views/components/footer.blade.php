@@ -232,8 +232,7 @@
         <p>Resolución N° 003095 del 18 de marzo de 2024. Ministerio de Educación Nacional</p>
     </div>
     <div class="footer__sistema">
-        <a href="">Sistema DSPACE 7 - Metabiblioteca |</a>
-        <img src="{{ asset('images/govco.png') }}" alt="">
+        <a href="">Ministerio de Tecnologías de la Información y las Comunicaciones - Universidad De Cartagena</a>
     </div>
 
 </section>

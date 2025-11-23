@@ -1,3 +1,15 @@
+.carpetas__section{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    gap: 2rem;
+    padding: 2rem;
+}
 .carpetas__list{
     display: flex;
     flex-wrap: wrap;
@@ -44,4 +56,15 @@
     height: 200px;
     width: 100%;
     border-radius: 1rem;
+}
+
+@media( max-width: 768px){
+    .carpetas__list{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .carpeta__link{
+        width: 100%;
+    }
 }

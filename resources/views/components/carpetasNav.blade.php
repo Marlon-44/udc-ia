@@ -1,4 +1,4 @@
-<section class="busqueda__section">
+<section class="carpetas__section">
 
     <div class="titulo">
         <h1>Casos de uso herramientas IA</h1>
