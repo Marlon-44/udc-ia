@@ -17,7 +17,7 @@
         <a href="{{ asset('/carpetas') }}" class="img__link">
             <img src="{{ asset('images/pdf__img.jpeg') }}" alt="">
             <div class="cover">
-                <h3>PDF</h3>
+                <h3>Casos de éxito</h3>
                 <p>Explora multiples casos de aplicacion de herramientas de IA</p>
             </div>
         </a>
