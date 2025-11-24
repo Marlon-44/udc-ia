@@ -266,4 +266,19 @@
     .search-icon {
         width: 6%;
     }
+
+    .pagination {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 100vw;
+        padding: 0 1rem;
+        /* Espacio visual si la paginación choca contra el lateral */
+        margin-bottom: 0;
+    }
+    .pagination::-webkit-scrollbar {
+        display: none;
+    }
+    .pagination .page-item {
+        flex: 0 0 auto;
+    }
 }
