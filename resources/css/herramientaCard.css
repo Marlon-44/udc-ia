@@ -1,7 +1,5 @@
 .herramienta__card {
     width: 30%;
-    /* max-width: 30%; */
-    flex-grow: 1;
     background: #ffffff;
     border-radius: 1.2rem;
     overflow: hidden;
@@ -11,6 +9,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     animation: fadeInUp 0.5s ease forwards;
+    min-width: 350px;
 }
 
 .herramienta__card:hover {
@@ -61,6 +60,10 @@
     font-weight: 600;
     text-decoration: none;
     transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.herramienta__link {
+    text-decoration: none;
 }
 
 .herramienta__button {

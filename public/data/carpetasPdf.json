@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Optimización de Servicios y Atención al Ciudadano",
+        "description": "Casos relacionados con chatbots para trámites, sistemas de agendamiento inteligente, personalización de servicios, etc.",
+        "pdfs": [
+            "pdf/pdf-1.pdf",
+            "pdf/pdf-2.pdf",
+            "pdf/pdf-3.pdf"
+        ]
+    },
+    {
+        "name": "Fortalecimiento de la Gestión Interna y Procesos de Apoyo",
+        "description": "Casos de automatización de procesos (RPA con IA), análisis predictivo para la gestión de talento humano, sistemas de clasificación automática de documentos, etc.",
+        "pdfs": [
+            "pdf/pdf-4.pdf",
+            "pdf/pdf-5.pdf",
+            "pdf/pdf-6.pdf"
+        ]
+    },
+    {
+        "name": "Soporte a la Toma de Decisiones y Planificación Estratégica",
+        "description": "Casos de uso de analítica predictiva para la asignación de recursos, modelado de políticas públicas, sistemas de alerta temprana, etc.",
+        "pdfs": [
+            "pdf/pdf-7.pdf",
+            "pdf/pdf-8.pdf",
+            "pdf/pdf-9.pdf"
+        ]
+    },
+    {
+        "name": "Mejora de la Fiscalización, Seguridad y Justicia",
+        "description": "Casos de detección de fraude en subsidios o impuestos, análisis de patrones delictivos, herramientas de IA para la anonimización de sentencias, etc.",
+        "pdfs": [
+            "pdf/pdf-10.pdf",
+            "pdf/pdf-11.pdf",
+            "pdf/pdf-12.pdf"
+        ]
+    },
+    {
+        "name": "Proyectos Innovadores del Diplomado",
+        "description": "Una sección especial que destaca las mejores ideas y prototipos surgidos del programa de formación, mostrando el potencial del talento humano del sector.",
+        "pdfs": [
+            "pdf/pdf-13.pdf",
+            "pdf/pdf-14.pdf",
+            "pdf/pdf-15.pdf"
+        ]
+    }
+]

@@ -13,7 +13,10 @@ export default defineConfig({
                 "resources/css/repositoriosPagination.css",
                 "resources/css/herramientaCard.css",
                 "resources/css/footer.css",
+                "resources/css/carpetaCard.css",
                 "resources/js/app.js",
+                "resources/js/templatesComponents/carpetaCardTemplate.js",
+                "resources/css/pdfs.css"
             ],
             refresh: true,
         }),

@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/app.css";
 import "./bannerBusqueda";
 import "./bootstrap";
-import "./filtros";
-import "./mobileMenu";
 import "./repositoriosPagination";
+import "./mobileMenu";
+import "./carpetasNav"
+import "./renderPdfsPage"
+import "./filtros";

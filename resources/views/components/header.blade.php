@@ -29,35 +29,33 @@
     </div>
 
     <div class="header__brand">
-        <a href="">
-            <img src="{{ asset('images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
-        </a>
-
-        <h2>Repositorio <br>Digital</h2>
+        <img src="{{ asset('images/Logo MinTic.png') }}" alt="Logo MinTic" class="minTic__logo">
+        
+        <img src="{{ asset('images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
     </div>
 
     <nav class="header__nav">
         <a href="{{ asset('/') }}" class="nav__option">Inicio</a>
 
-<!-- <a href="#" class="nav__option">Comunidades</a> -->
-<!-- <a href="#" class="nav__option">Navegar <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon"></a> -->
-<!-- <a href="#" class="nav__option">Estadísticas</a> -->
-<!-- <a href="#" class="nav__option">Acerca</a> -->
-<!-- <a href="#" class="nav__option">Cómo depositar</a> -->
-<!-- <a href="#" class="nav__option">Políticas</a> -->
-<!-- <a href="#" class="nav__option">Servicios</a> -->
-<!-- <a href="#" class="nav__option">Contactos</a> -->
+        <!-- <a href="#" class="nav__option">Comunidades</a> -->
+        <!-- <a href="#" class="nav__option">Navegar <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon"></a> -->
+        <!-- <a href="#" class="nav__option">Estadísticas</a> -->
+        <!-- <a href="#" class="nav__option">Acerca</a> -->
+        <!-- <a href="#" class="nav__option">Cómo depositar</a> -->
+        <!-- <a href="#" class="nav__option">Políticas</a> -->
+        <!-- <a href="#" class="nav__option">Servicios</a> -->
+        <!-- <a href="#" class="nav__option">Contactos</a> -->
 
-        <div class="nav__item dropdown nav__option">
-            <a href="#" class="nav__option">
+        {{-- <div class="nav__item dropdown nav__option"> --}}
+        {{-- <a href="#" class="nav__option">
                 Biblioteca
                 <img src="{{ asset('images/dropdown.png') }}" class="icon user__icon">
-            </a>
+            </a> --}}
 
-            <div class="dropdown__menu">
+        {{-- <div class="dropdown__menu">
                 <a href="{{ asset('/repositorio') }}">Repositorio</a>
-            </div>
-        </div>
+            </div> --}}
+        {{-- </div> --}}
 
     </nav>
 

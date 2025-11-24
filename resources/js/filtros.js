@@ -16,6 +16,7 @@ function cargarCategorias(records) {
         select.appendChild(opt);
     });
 }
+
 function aplicarFiltros() {
     const nombre = document.getElementById("filtroNombre").value.toLowerCase();
     const categoria = document.getElementById("filtroCategoria").value;
@@ -30,9 +31,27 @@ function aplicarFiltros() {
     window.currentPage = 1;
     window.renderPage();
 }
+
+// Botón aplicar filtros
 document
     .getElementById("btnAplicarFiltros")
     .addEventListener("click", aplicarFiltros);
+
+// Lupa (ícono de buscar)
+document
+    .getElementById("iconoBuscar")
+    .addEventListener("click", aplicarFiltros);
+
+// ENTER en el input para buscar por nombre
+document
+    .getElementById("filtroNombre")
+    .addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            aplicarFiltros();
+        }
+    });
+
+// Botón limpiar filtros
 document.getElementById("btnLimpiarFiltros").addEventListener("click", () => {
     document.getElementById("filtroNombre").value = "";
     document.getElementById("filtroCategoria").value = "";
@@ -40,3 +59,5 @@ document.getElementById("btnLimpiarFiltros").addEventListener("click", () => {
     window.currentPage = 1;
     window.renderPage();
 });
+
+window.cargarCategorias = cargarCategorias;
