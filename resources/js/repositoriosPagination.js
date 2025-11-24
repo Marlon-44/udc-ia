@@ -23,7 +23,11 @@ async function initRepositorio() {
         const response = await fetch(MODO_API ? URL_API : URL_LOCAL);
         window.records = await response.json();
         window.filteredRecords = [...window.records];
-        cargarCategorias(window.records);
+        cargarCategorias(
+            window.records.sort((a, b) =>
+                a.categoria.localeCompare(b.categoria)
+            )
+        );
 
         window.renderPage(); // Llama a la función global, no local
     } catch (error) {
@@ -51,9 +55,11 @@ window.renderPage = function () {
 
     paginatedItems.forEach((reg) => {
         const videoID = getYoutubeID(reg.video);
-        const thumbnail = videoID
-            ? `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`
-            : "https://via.placeholder.com/300x200?text=Sin+imagen";
+        const thumbnail = reg.logo
+            ? reg.logo
+            : videoID
+            ? `https://img.youtube.com/vi/${videoID}/0.jpg`
+            : "/images/default-thumbnail.jpg";
 
         const nombre = reg.nombre ?? "Sin nombre";
         const descripcion = reg.descripcion ?? "Sin descripción";
@@ -66,7 +72,9 @@ window.renderPage = function () {
             nombre
         )}" class="herramienta__link">
             <div class="herramienta__card">
-                <img src="${thumbnail}" alt="Miniatura del video" class="card__img">
+                <img src="${
+                    reg.logo ? BASE_URL.concat(thumbnail) : thumbnail
+                }" alt="Miniatura del video" class="card__img">
                 <div class="herramienta__card__content">
                     <h5 class="herramienta__card__title">${nombre}</h5>
                     <p class="herramienta__card__description">${descripcion}</p>
@@ -97,39 +105,97 @@ window.renderPagination = function () {
     paginationEl.innerHTML = "";
 
     const totalPages = Math.ceil(window.filteredRecords.length / itemsPerPage);
+    const current = window.currentPage;
 
-    paginationEl.innerHTML += `
-        <li class="page-item ${window.currentPage === 1 ? "disabled" : ""}">
-            <button class="page-link" data-page="${
-                window.currentPage - 1
-            }">Anterior</button>
-        </li>
-    `;
-
-    for (let i = 1; i <= totalPages; i++) {
-        paginationEl.innerHTML += `
-            <li class="page-item ${i === window.currentPage ? "active" : ""}">
-                <button class="page-link" data-page="${i}">${i}</button>
-            </li>
-        `;
+    function createButton(
+        page,
+        label = null,
+        disabled = false,
+        active = false,
+        dots = false
+    ) {
+        if (dots) {
+            return `<li class="page-item disabled"><span class="page-link">...</span></li>`;
+        }
+        return `<li class="page-item ${active ? "active" : ""} ${
+            disabled ? "disabled" : ""
+        }">
+                    <button class="page-link" data-page="${page}">${
+            label || page
+        }</button>
+                </li>`;
     }
 
-    paginationEl.innerHTML += `
-        <li class="page-item ${
-            window.currentPage === totalPages ? "disabled" : ""
-        }">
-            <button class="page-link" style='color: #E79D19' data-page="${
-                window.currentPage + 1
-            }">Siguiente</button>
-        </li>
-    `;
+    // Anterior
+    paginationEl.innerHTML += createButton(
+        current - 1,
+        "Anterior",
+        current === 1
+    );
 
+    // Paginas
+    let pages = [];
+    if (totalPages <= 5) {
+        // Mostrar todas
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+        if (current <= 3) {
+            pages = [1, 2, 3, 4, 0, totalPages];
+        } else if (current >= totalPages - 2) {
+            pages = [
+                1,
+                0,
+                totalPages - 3,
+                totalPages - 2,
+                totalPages - 1,
+                totalPages,
+            ];
+        } else {
+            pages = [1, 0, current - 1, current, current + 1, 0, totalPages];
+        }
+    }
+
+    // Render paginación con puntos
+    let prev = 0;
+    for (const p of pages) {
+        if (p === 0) {
+            paginationEl.innerHTML += createButton(
+                null,
+                null,
+                true,
+                false,
+                true
+            );
+        } else {
+            if (p !== prev) {
+                paginationEl.innerHTML += createButton(
+                    p,
+                    p,
+                    false,
+                    p === current
+                );
+                prev = p;
+            }
+        }
+    }
+
+    // Siguiente
+    paginationEl.innerHTML += createButton(
+        current + 1,
+        "Siguiente",
+        current === totalPages
+    );
+
+    // Click listeners
     paginationEl.querySelectorAll("button[data-page]").forEach((btn) => {
+        const page = parseInt(btn.dataset.page);
         btn.addEventListener("click", () => {
-            const page = parseInt(btn.dataset.page);
             if (page > 0 && page <= totalPages) {
                 window.currentPage = page;
                 window.renderPage();
+                // Scroll arriba en móvil para UX mejorada
+                if (window.innerWidth < 768)
+                    window.scrollTo({ top: 0, behavior: "smooth" });
             }
         });
     });
