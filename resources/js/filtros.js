@@ -33,16 +33,19 @@ function aplicarFiltros() {
 }
 
 // Botón aplicar filtros
-document.getElementById("btnAplicarFiltros")
+document
+    .getElementById("btnAplicarFiltros")
     .addEventListener("click", aplicarFiltros);
 
 // Lupa (ícono de buscar)
-document.getElementById("iconoBuscar")
+document
+    .getElementById("iconoBuscar")
     .addEventListener("click", aplicarFiltros);
 
 // ENTER en el input para buscar por nombre
-document.getElementById("filtroNombre")
-    .addEventListener("keydown", function(e) {
+document
+    .getElementById("filtroNombre")
+    .addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
             aplicarFiltros();
         }
