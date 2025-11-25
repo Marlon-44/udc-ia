@@ -16,7 +16,8 @@ export default defineConfig({
                 "resources/css/carpetaCard.css",
                 "resources/js/app.js",
                 "resources/js/templatesComponents/carpetaCardTemplate.js",
-                "resources/css/pdfs.css"
+                "resources/css/pdfs.css",
+                "resources/css/tool__info.css"
             ],
             refresh: true,
         }),
