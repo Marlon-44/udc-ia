@@ -20,7 +20,15 @@ class InfoController extends Controller
             $info['video_embed'] = $this->getYoutubeEmbed($info['video']);
         }
 
-        return view('infoCard', compact('info'));
+        $pasos_texto = $info['pasos'];
+        // Captura los textos después de cada número y punto
+        $pasos_array = preg_split('/\d+\.\s*/', $pasos_texto, -1, PREG_SPLIT_NO_EMPTY);
+        $info['pasos_array'] = array_map('trim', $pasos_array);
+
+
+
+
+        return view('infoCard', compact('info', 'pasos_array'));
     }
 
     private function getYoutubeEmbed($url)
