@@ -102,6 +102,7 @@
     box-shadow: 1px 1px 1px #00000031;
     padding: 3rem;
     width: 22%;
+    margin-bottom: auto;
     border-radius: 4rem;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -122,6 +123,19 @@
 .item__card a {
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.item__card ol {
+    padding-left: 28px; /* separa un poco más el texto del margen */
+    color: #4e4e4e;
+    font-size: 0.8rem;
+    list-style-type: decimal; /* fuerza la numeración normal */
+}
+
+.item__card ol li {
+    /* margin-bottom: 12px; */
+    line-height: 1.5;
+    /* font-weight: 400; */
 }
 
 .nav__tool__btn {
