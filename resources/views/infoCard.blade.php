@@ -35,8 +35,14 @@
                     </div>
                     <div class="item__card">
                         <h3>Pasos</h3>
-                        <p>{{ $info['pasos'] }}</p>
+                        <ol>
+                            @foreach ($info['pasos_array'] as $paso)
+                                <li>{{ $paso }}</li>
+                            @endforeach
+                        </ol>
                     </div>
+
+
                     <div class="item__card">
                         <h3>Resultados</h3>
                         <p>{{ $info['resultado'] }}</p>
