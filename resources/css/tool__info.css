@@ -343,6 +343,16 @@
         padding: 0 1rem;
         margin-top: 2rem;
     }
-    
-
+    .step-item{
+        height: fit-content;
+    }
+    .step-number{
+        width: 20%;
+        aspect-ratio: 1/1;
+        
+    }
+    .step-item p{
+        font-size: 0.8rem;
+        width: 70%;
+    }
 }
