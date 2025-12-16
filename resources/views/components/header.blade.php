@@ -36,6 +36,7 @@
 
     <nav class="header__nav">
         <a href="{{ asset('/') }}" class="nav__option">Inicio</a>
+        <a href="{{ asset('/colaboradores') }}" class="nav__option">Colaboradores</a>
 
         <!-- <a href="#" class="nav__option">Comunidades</a> -->
         <!-- <a href="#" class="nav__option">Navegar <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon"></a> -->

@@ -355,7 +355,7 @@
         "insumos": "Idea de aplicación o proyecto web, requerimientos funcionales y especificaciones visuales.",
         "pasos": "1. Acceder a la plataforma bolt.new y crear un nuevo proyecto.\n 2. Describir en lenguaje natural el tipo de aplicación o sitio que se desea construir.\n 3. La IA genera automáticamente la estructura del proyecto (frontend, backend y base de datos).\n 4. Editar o ajustar componentes visuales y funcionales desde el editor integrado.\n 5. Probar y desplegar la aplicación directamente desde la plataforma.",
         "resultado": "Aplicación web funcional generada automáticamente a partir de descripciones en lenguaje natural, lista para pruebas o despliegue.",
-        "enlace": "https://theresanaiforthat.com/ai/bolt-new/",
+        "enlace": "https://bolt.new/",
         "video": "https://www.youtube.com/watch?v=0_Ij8FEvY4U",
         "logo": "/images/logo/30.jpg"
     },
@@ -415,7 +415,7 @@
         "insumos": "Texto libre, imágenes, audio o vídeo que requieren procesamiento mediante IA, además de varias licencias para diferentes modelos de IA.",
         "pasos": "1. Crear una cuenta en la plataforma Cabina.AI.\n 2. Subir o ingresar el insumo (texto, imagen, audio o vídeo) en el entorno de trabajo.\n 3. Seleccionar uno o varios modelos de IA disponibles dentro de la plataforma para ejecutar la acción (por ejemplo: generación de texto, análisis de imagen, transcripción de audio).\n 4. Comparar los resultados generados por los distintos modelos y elegir el que mejor se adapte al objetivo.\n 5. Editar o refinar el resultado si es necesario, luego exportar o integrar el contenido final.",
         "resultado": "Entorno unificado de IA que permite generar, analizar o refinar contenidos multimedia (texto, imagen, audio, vídeo) usando diferentes modelos en una sola interfaz, y con la opción de comparar salidas para mayor calidad.",
-        "enlace": "https://theresanaiforthat.com/ai/cabina-ai/",
+        "enlace": "https://cabina.ai/",
         "video": "https://www.youtube.com/watch?v=I09ImetWxPk",
         "logo": "/images/logo/35.jpg"
     },
@@ -439,7 +439,7 @@
         "insumos": "Guion, imágenes o clips para el vídeo",
         "pasos": "1. Crear un nuevo proyecto 2. Seleccionar una plantilla de vídeo 3. Cargar el guion y elementos multimedia 4. Generar y descargar el vídeo corto",
         "resultado": "Video corto promocional generado de forma automatica",
-        "enlace": "https://theresanaiforthat.com/ai/calvin-ai-shorts-maker/",
+        "enlace": "https://www.humanion.ai/",
         "video": "https://www.youtube.com/watch?v=3IMI8FdhEhw",
         "logo": "/images/logo/37.jpg"
     },
@@ -463,7 +463,7 @@
         "insumos": "Datos numéricos o métricas de negocio, hoja eléctrica o CSV, tipo de gráfico deseado, eje temporal o categorías de comparación.",
         "pasos": "1. Cargar o importar los datos en la plataforma.\n 2. Seleccionar el tipo de gráfico o visualización deseada (línea, barra, área, dispersión).\n 3. La IA analiza los datos y propone automáticamente estructura de gráfico, ejes, colores y etiquetas.\n 4. Revisar el gráfico generado, ajustar parámetros (título, leyenda, intervalo) si es necesario.\n 5. Exportar o insertar la visualización resultante en reporte, presentación o dashboard.",
         "resultado": "Visualización automática de datos mediante IA, que permite generar gráficos relevantes y profesionales en segundos, optimizando la presentación de resultados e insights.",
-        "enlace": "https://theresanaiforthat.com/ai/chartai/",
+        "enlace": "https://chartai.io/",
         "video": "https://www.youtube.com/watch?v=DT0KyuZehjE",
         "logo": "/images/logo/39.jpg"
     },
@@ -487,7 +487,7 @@
         "insumos": "Texto descriptivo del tipo de imagen deseada, estilo, colores, resolución; o imagen base para edición.",
         "pasos": "1. Acceder al modo de generación de imágenes dentro de ChatGPT (por ejemplo seleccionando “Crear imagen” o subiendo una imagen para modificar).\n 2. Escribir un prompt claro que describa la imagen deseada: tema, estilo, formato, ambiente.\n 3. Si se parte de una imagen existente, subirla y solicitar la edición (por ejemplo “remplazar fondo”, “añadir elemento”, “convertir al estilo acuarela”).\n 4. Revisar la imagen generada o editada, y en caso necesario refinar el prompt o solicitar una nueva variante.\n 5. Descargar la imagen final o integrarla directamente en tu presentación o documento.",
         "resultado": "Imagen generada o modificada mediante IA dentro de ChatGPT, lista para usar en contenidos digitales, presentaciones o redes sociales, sin necesidad de herramientas externas de edición gráfica.",
-        "enlace": "https://theresanaiforthat.com/ai/chat-gpt-photos/",
+        "enlace": "https://chat-gpt.photos/",
         "video": "https://www.youtube.com/watch?v=mFmpkS7avlQ",
         "logo": "/images/logo/41.jpg"
     },
@@ -535,7 +535,7 @@
         "insumos": "Texto, consultas complejas o documentos a resumir.",
         "pasos": "1. Acceder a Claude.\n 2. Ingresar prompt o documento.\n 3. Seleccionar modo de análisis.\n 4. Recibir respuesta y ajustar si es necesario.\n 5. Guardar o compartir resultados.",
         "resultado": "Generación y análisis de texto de alta precisión con IA conversacional avanzada.",
-        "enlace": "https://theresanaiforthat.com/ai/claude/",
+        "enlace": "https://claude.com/",
         "video": "https://www.youtube.com/watch?v=1Aw2-knqmdU",
         "logo": "/images/logo/45.jpg"
     },
@@ -547,7 +547,7 @@
         "insumos": "Datos en hojas de cálculo (Sheets).",
         "pasos": "1. Instalar la extensión Claude for Sheets.\n 2. Autorizar acceso a la hoja.\n 3. Usar fórmulas con IA para generar o analizar datos.\n 4. Revisar resultados automáticos.\n 5. Exportar o compartir.",
         "resultado": "Análisis y generación automática de texto o datos dentro de Google Sheets.",
-        "enlace": "https://theresanaiforthat.com/ai/claude-for-sheets/",
+        "enlace": "https://www.anthropic.com/",
         "video": "https://www.youtube.com/watch?v=ksbJgSsq988",
         "logo": "/images/logo/46.jpg"
     },
@@ -631,7 +631,7 @@
         "insumos": "Documentos o datos internos.",
         "pasos": "1. Acceder a Cresh.\n 2. Cargar o conectar las fuentes de información.\n 3. Entrenar el modelo según los datos.\n 4. Realizar consultas en lenguaje natural.\n 5. Analizar los resultados y ajustar parámetros.",
         "resultado": "Asistente de conocimiento interno basado en IA que permite buscar y analizar información institucional.",
-        "enlace": "https://theresanaiforthat.com/ai/cresh-me/",
+        "enlace": "https://cresh.me/",
         "video": "https://www.youtube.com/watch?v=a0_lo_GDcFw",
         "logo": "/images/logo/53.jpg"
     },
@@ -643,7 +643,7 @@
         "insumos": "Código fuente o descripciones textuales.",
         "pasos": "1. Iniciar Cursor AI.\n 2. Importar el proyecto o repositorio.\n 3. Redactar comandos o prompts para generar código.\n 4. Revisar las sugerencias del modelo.\n 5. Ejecutar y depurar.",
         "resultado": "Editor de código asistido por IA para programación acelerada y refactorización inteligente.",
-        "enlace": "https://theresanaiforthat.com/ai/cursor-ai/",
+        "enlace": "https://cursor.com/",
         "video": "https://www.youtube.com/watch?v=3289vhOUdKA",
         "logo": "/images/logo/54.jpg"
     },
@@ -703,7 +703,7 @@
         "insumos": "Prompts y consultas de texto",
         "pasos": "1. Enviar pregunta 2. Recibir respuesta 3. Proporcionar retroalimentacion para mejorar la seguridad",
         "resultado": "Respuestas conversacionales con enfoque en seguridad y veracidad",
-        "enlace": "https://www.elevenreaders.com",
+        "enlace": "https://deepmind.google/blog/building-safer-dialogue-agents/",
         "video": "https://www.youtube.com/watch?v=2i-egJFtcUM",
         "logo": "/images/logo/59.jpg"
     },
@@ -715,7 +715,7 @@
         "insumos": "Archivos de audio o vídeo",
         "pasos": "1. Importar archivo 2. Generar transcripcion 3. Editar audio y texto 4. Exportar archivo editado",
         "resultado": "Audio o vídeo editado con transcripcion",
-        "enlace": "https://aistudio.google.com",
+        "enlace": "https://www.descript.com/",
         "video": "https://www.youtube.com/watch?v=YEzJ_r7geuc",
         "logo": "/images/logo/60.jpg"
     },
@@ -727,7 +727,7 @@
         "insumos": "Texto de usuario y contexto conversacional.",
         "pasos": "1. Entrar a Dialogflow.\n 2. Crear un agente.\n 3. Definir intents y respuestas.\n 4. Integrar con canales (web, chat, voz).\n 5. Probar el bot y ajustar interacciónes.",
         "resultado": "Asistente conversacional que permite crear chatbots con IA para servicio al cliente o automatización de soporte.",
-        "enlace": "https://www.heygen.com",
+        "enlace": "https://dialogflow.cloud.google.com/#/getStarted",
         "video": "https://www.youtube.com/watch?v=8fUk0TNM7Cs&list=PL06PIuaOoIJn6GfmusHsEEyIleFBE8dIs",
         "logo": "/images/logo/61.jpg"
     },
@@ -787,7 +787,7 @@
         "insumos": "Diseños gráficos, referencias visuales o instrucciones creativas.",
         "pasos": "1. Ingresar a Dzine. 2. Describir el estilo visual o concepto que se desea generar. 3. Ajustar colores, tipografías o composiciones sugeridas. 4. Revisar las variantes de diseño propuestas por la IA. 5. Descargar el diseño final o integrarlo a herramientas de edición.",
         "resultado": "Generación automática de propuestas visuales y piezas gráficas a partir de descripciones en texto, ideal para diseñadores y equipos de marketing.",
-        "enlace": "https://theresanaiforthat.com/ai/stylar/",
+        "enlace": "https://www.dzine.ai/",
         "video": "https://www.youtube.com/watch?v=4NZ8rEOvv1w&list=PL04Yr3fd8Wh4axEt2OwJsbG_0ptaDZJ6u",
         "logo": "/images/logo/66.jpg"
     },
@@ -811,7 +811,7 @@
         "insumos": "Clips de vídeo o archivos de audio para edición.",
         "pasos": "1. Acceder a EditApp. 2. Subir el archivo multimedia o importar desde una plataforma. 3. Usar las funciones de IA para eliminar silencios, ruidos o cortes. 4. Agregar subtítulos automáticos o efectos visuales. 5. Exportar el vídeo final en alta resolución.",
         "resultado": "Aplicación de edición de vídeo impulsada por IA que agiliza el proceso de posproducción mediante automatización inteligente.",
-        "enlace": "https://theresanaiforthat.com/ai/editapp/",
+        "enlace": "https://editapp.io/",
         "video": "https://www.youtube.com/watch?v=ZCN-xy3v4lc",
         "logo": "/images/logo/68.jpg"
     },
@@ -835,7 +835,7 @@
         "insumos": "Texto, guion o frase de voz a generar.",
         "pasos": "1. Acceder a ElevenLabs AI Voice Generator. 2. Escribir o cargar el texto. 3. Seleccionar idioma, tono y locutor. 4. Generar y escuchar la voz sintetizada. 5. Descargar el archivo de audio.",
         "resultado": "Generador de voz realista basado en IA, ideal para vídeos, podcasts o asistentes virtuales.",
-        "enlace": "https://theresanaiforthat.com/ai/eleven-labs/",
+        "enlace": "https://elevenlabs.io/",
         "video": "https://www.youtube.com/watch?v=s7p6OLwV_50&t=55s",
         "logo": "/images/logo/70.jpg"
     },
@@ -847,7 +847,7 @@
         "insumos": "Documentos, artículos o textos para lectura y análisis.",
         "pasos": "1. Ingresar a ElevenReaders. 2. Subir el documento o ingresar la URL. 3. La IA analiza el contenido y genera resúmenes o preguntas guía. 4. Revisar insights y puntos clave. 5. Exportar el resumen en texto o PDF.",
         "resultado": "Plataforma de lectura inteligente que resume, explica y analiza textos académicos o técnicos mediante IA.",
-        "enlace": "https://www.elevenreaders.com",
+        "enlace": "https://elevenreader.io/",
         "video": "https://www.youtube.com/watch?v=IT7eptxp6_o",
         "logo": "/images/logo/71.jpg"
     },
@@ -859,7 +859,7 @@
         "insumos": "Datos de clientes o registros de atención.",
         "pasos": "1. Acceder a Eternity AC. 2. Configurar la base de clientes. 3. Implementar flujos automatizados de atención. 4. Analizar métricas de satisfacción. 5. Ajustar las respuestas de IA.",
         "resultado": "Plataforma de automatización de atención al cliente mediante inteligencia conversacional y análisis de sentimiento.",
-        "enlace": "https://theresanaiforthat.com/ai/eternity-ac/",
+        "enlace": "https://eternity.ac/",
         "video": "https://www.youtube.com/watch?v=Xfxm934eDkM",
         "logo": "/images/logo/72.jpg"
     },
@@ -907,7 +907,7 @@
         "insumos": "Grabaciones de reuniones o vídeollamadas.",
         "pasos": "1. Ingresar a Fathom 2.0. 2. Conectar la cuenta de Zoom, Meet o Teams. 3. Activar grabación automática. 4. La IA genera resúmenes, temas y tareas. 5. Exportar notas o informes.",
         "resultado": "Asistente de reuniones con IA que transcribe, resume y organiza automáticamente los puntos clave de cada conversación.",
-        "enlace": "https://theresanaiforthat.com/ai/fathom-2-0/",
+        "enlace": "https://www.fathom.ai/",
         "video": "https://www.youtube.com/watch?v=rQpqu2lJXuA",
         "logo": "/images/logo/76.jpg"
     },
@@ -955,7 +955,7 @@
         "insumos": "Imágenes o bocetos iniciales.",
         "pasos": "1. Ingresar a FLUX. 2. Describir el concepto o cargar una referencia visual. 3. Seleccionar estilo y composición. 4. Generar la imagen con IA. 5. Descargar o editar el resultado final.",
         "resultado": "Generador de imágenes y conceptos artísticos con IA enfocado en diseño visual, branding y creatividad.",
-        "enlace": "https://theresanaiforthat.com/ai/flux/",
+        "enlace": "https://bfl.ai/",
         "video": "https://www.youtube.com/watch?v=xOoAlRjTKTw",
         "logo": "/images/logo/80.jpg"
     },
@@ -979,7 +979,7 @@
         "insumos": "Descripción de imagen, tema o estilo deseado.",
         "pasos": "1. Acceder a Freepik AI Image Generator. 2. Escribir un prompt detallado con el tipo de imagen o composición. 3. Seleccionar estilo visual y resolución. 4. Generar la imagen y ajustar detalles. 5. Descargar el resultado final.",
         "resultado": "Generador de imágenes de alta calidad basado en IA, integrado a la plataforma Freepik, ideal para diseñadores y creadores de contenido.",
-        "enlace": "https://theresanaiforthat.com/ai/freepik-ai-image-generator/",
+        "enlace": "https://www.freepik.com/",
         "video": "https://www.youtube.com/watch?v=Y5pO2ecX3Js",
         "logo": "/images/logo/82.jpg"
     },
@@ -1063,7 +1063,7 @@
         "insumos": "Tareas, notas o documentos importantes.",
         "pasos": "1. Acceder a Gems. 2. Crear un nuevo espacio o proyecto. 3. Agregar información, tareas o documentos. 4. La IA organiza y sugiere recordatorios o conexiones entre datos. 5. Exportar o compartir la información relevante.",
         "resultado": "Asistente de productividad basado en IA que organiza información y genera recordatorios inteligentes para profesionales.",
-        "enlace": "https://theresanaiforthat.com/ai/gems/",
+        "enlace": "https://gemini.google/overview/gems/",
         "video": "https://www.youtube.com/watch?v=wZURH0tZ6fU",
         "logo": "/images/logo/89.jpg"
     },
@@ -1195,7 +1195,7 @@
         "insumos": "Conjunto de prompts, textos y conocimientos específicos.",
         "pasos": "1. Acceder a GPT Trainer. 2. Cargar los datos o documentos que servirán como base de entrenamiento. 3. Definir parámetros de personalización del modelo. 4. Ejecutar el entrenamiento del modelo GPT. 5. Probar y ajustar respuestas según los resultados.",
         "resultado": "Herramienta para crear modelos GPT personalizados a partir de datos propios, optimizando su precisión en contextos empresariales o educativos.",
-        "enlace": "https://theresanaiforthat.com/ai/gpt-trainer/",
+        "enlace": "https://gpt-trainer.com/?ref=taaft&utm_source=taaft&utm_medium=referral",
         "video": "https://www.youtube.com/watch?v=Ri98jfX1UcM",
         "logo": "/images/logo/100.jpg"
     },
@@ -1375,7 +1375,7 @@
         "insumos": "Encuestas, feedback o datos de empleados.",
         "pasos": "1. Ingresar a Humu. 2. Crear encuestas personalizadas. 3. La IA analiza respuestas y genera recomendaciones de acción. 4. Revisar reportes de clima organizacional. 5. Compartir resultados con líderes.",
         "resultado": "Plataforma de IA para mejorar la cultura laboral mediante análisis de comportamiento y retroalimentación continua.",
-        "enlace": "https://www.humu.com",
+        "enlace": "https://webcatalog.io/es/apps/humu",
         "video": "https://www.youtube.com/watch?v=sSBLsKlAjXo",
         "logo": "/images/logo/115.jpg"
     },
@@ -1459,7 +1459,7 @@
         "insumos": "Textos, conceptos de innovación o proyectos ciudadanos.",
         "pasos": "1. Ingresar a Inncivio. 2. Registrar la propuesta de innovación o emprendimiento. 3. La IA analiza su impacto y escalabilidad. 4. Recibir sugerencias de mejora. 5. Publicar o compartir la propuesta.",
         "resultado": "Plataforma de innovación abierta impulsada por IA que ayuda a validar, conectar y escalar proyectos sociales o tecnológicos.",
-        "enlace": "https://theresanaiforthat.com/ai/inncivio/",
+        "enlace": "https://www.inncivio.com/",
         "video": "https://www.youtube.com/watch?v=qI1KmTIvd-M",
         "logo": "/images/logo/122.jpg"
     },
@@ -1483,7 +1483,7 @@
         "insumos": "Documentos, artículos o material de estudio.",
         "pasos": "1. Ingresar a Intellect Hub. 2. Cargar o vincular los archivos de conocimiento. 3. Usar la búsqueda con IA para encontrar información clave. 4. Crear resúmenes automáticos. 5. Exportar resultados o presentaciones.",
         "resultado": "Plataforma de gestión del conocimiento impulsada por IA que organiza, analiza y resume información empresarial o académica.",
-        "enlace": "https://theresanaiforthat.com/ai/intellect-hub/",
+        "enlace": "https://intellecthub.in/",
         "video": "https://www.youtube.com/watch?v=Ar57C2hjXWE",
         "logo": "/images/logo/124.jpg"
     },
@@ -1975,7 +1975,7 @@
         "insumos": "Consultas en lenguaje natural o proyectos creativos.",
         "pasos": "1. Ingresar a Nano Banana (Gemini). 2. Escribir un prompt detallado o pregunta. 3. Seleccionar el modo de salida (texto, imagen o análisis). 4. Generar el resultado con Gemini. 5. Guardar o compartir la respuesta.",
         "resultado": "Plataforma experimental basada en Gemini que ofrece generación de texto, imágenes y análisis con respuestas naturales.",
-        "enlace": "https://labs.google/fx/nano-banana",
+        "enlace": "https://aistudio.google.com/prompts/new_chat?model=models%2Fgemini-3-pro-image-preview&prompt=Generate%20an%20image%20of%20a%20banana%20wearing%20a%20costume.",
         "video": "https://www.youtube.com/watch?v=o0sALbIc_WQ",
         "logo": "/images/logo/165.jpg"
     },
@@ -2347,7 +2347,7 @@
         "insumos": "paginas web o documentos que se quieren resumir o mejorar",
         "pasos": "instalar sider ai -> visitar pagina de interes -> activar la extension -> obtener resumen o ayuda -> copiar resultados",
         "resultado": "resumenes y sugerencias sobre contenido web para mejorar la navegacion",
-        "enlace": "https://theresanaiforthat.com/ai/sider-ai/",
+        "enlace": "https://sider.ai/pricing?source=gg&p1=pricing&p2=search&gad_source=1&gad_campaignid=21377599362&gbraid=0AAAAAp2HqI_krNlCV7N59Ir8pte0Q49GN&gclid=Cj0KCQiArt_JBhCTARIsADQZaymW8L1lhPwthAFA1cBUeXbbZd4UuR8NOFtNOuMKulWio2K9Ta0p7_caAplSEALw_wcB",
         "video": "https://www.youtube.com/watch?v=K49pm3rKCx0",
         "logo": "/images/logo/196.jpg"
     },
@@ -2455,7 +2455,7 @@
         "insumos": "instrucciones conversacionales y tareas complejas a automatizar",
         "pasos": "iniciar conversacion con suna -> describir la tarea compleja -> seguir instrucciones de la ia -> aprobar pasos -> ejecutar la solucion",
         "resultado": "tarea compleja automatizada con ayuda de un agente conversacional",
-        "enlace": "https://www.suna.so",
+        "enlace": "https://www.kortix.com/",
         "video": "https://www.youtube.com/watch?v=eckVTrlz85g",
         "logo": "/images/logo/205.jpg"
     },
@@ -2731,7 +2731,7 @@
         "insumos": "texto educativo, guion o contenido multimedia",
         "pasos": "iniciar sesion, seleccionar tipo de recurso, cargar el texto o multimedia, escoger opciónes de ia y generar el contenido",
         "resultado": "contenido educativo o multimedia generado automaticamente",
-        "enlace": "https://theresanaiforthat.com/ai/udio/",
+        "enlace": "https://www.udio.com/",
         "video": "https://www.youtube.com/watch?v=5XhQ-A7kVss",
         "logo": "/images/logo/228.jpg"
     },
@@ -2755,7 +2755,7 @@
         "insumos": "Prompts, chats o integraciones.",
         "pasos": "1. Ingresar a UseChatGPT. 2. Conectar la herramienta con la app o web deseada. 3. Escribir prompts personalizados. 4. Ejecutar las respuestas en contexto. 5. Guardar resultados o exportar.",
         "resultado": "Extensión que integra ChatGPT directamente en navegadores o aplicaciones para mejorar productividad y respuesta contextual.",
-        "enlace": "https://theresanaiforthat.com/ai/usechatgpt/",
+        "enlace": "https://easywithai.com/ai-chrome-extensions/usechatgpt-ai/",
         "video": "https://www.youtube.com/watch?v=nqSHQQ6WUmk",
         "logo": "/images/logo/230.jpg"
     },

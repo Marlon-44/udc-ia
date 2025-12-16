@@ -22,7 +22,8 @@
     'resources/css/footer.css',
     'resources/css/carpetaCard.css',
     'resources/css/pdfs.css',
-    'resources/css/tool__info.css'])
+    'resources/css/tool__info.css',
+    'resources/css/colaboradores.css'])
 
     @stack('styles')
 </head>

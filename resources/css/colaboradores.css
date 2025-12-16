@@ -1,0 +1,251 @@
+.collaboradores__page {
+    width: 100%;
+    height: fit-content;
+    padding: 4rem 2rem;
+    border-bottom: 2vh solid var(--color-primario);
+
+}
+
+.collaboradores__page h2 {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto;
+
+}
+
+.colab1 .colab-icons {
+    position: relative;
+    z-index: 2;
+    width: 3vw;
+    aspect-ratio: 1/1;
+    top: 0;
+    left: -1.5rem;
+    top: 1rem;
+}
+
+.colab-icons p {
+    background: linear-gradient(90deg,
+            #7f00ff,
+            #e100ff);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    font-weight: 500;
+}
+
+.icon1 {
+    position: absolute;
+    top: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.icon2 {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    font-size: 2rem;
+}
+
+.icon3 {
+    position: relative;
+    top: 1.5rem;
+    font-size: 2rem;
+}
+
+.colab-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+
+}
+
+.colaborador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.colab-img {
+    position: relative;
+    width: 6vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.colab-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+
+    background: conic-gradient(aqua 0deg 288deg,
+            transparent 288deg 360deg);
+
+    mask: radial-gradient(circle,
+            transparent 65%,
+            black 62%);
+
+    z-index: 1;
+}
+
+
+
+.colab-img img {
+    position: absolute;
+    inset: 12%;
+    width: 76%;
+    height: 76%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+.colab-name {
+    position: relative;
+    padding: 0.75rem;
+    border-left: 3px solid aqua;
+    border-right: 3px solid aqua;
+    border-bottom: 3px solid aqua;
+}
+
+/* borde superior cortado */
+.colab-name::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(to right,
+            aqua 0% 25%,
+            transparent 25% 75%,
+            aqua 75% 100%);
+}
+
+.colab-name h3 {
+    font-size: 1rem;
+    color: #fff;
+    z-index: 6;
+    position: relative;
+}
+
+.colab-job {
+    background-color: aqua;
+}
+
+.colab-job h3 {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+
+
+.docentes_tutores{
+    display: flex;
+    gap: 2rem;
+}
+.docentes{
+    width: 40%;
+}
+.tutores{
+    width: 60%;
+}
+.tutores__table__section{
+    display: flex;
+    gap: 2rem;
+}
+.t-tutores{
+    width: 50%;
+}
+
+.colab__title{
+    width: 100%;
+    background-color: aqua;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.colab__title h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #034069;
+}
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    height: fit-content;
+    border-radius: 8px;
+}
+
+thead {
+    background-color: aqua;
+    color: #034069;
+}
+
+th {
+    padding: 16px 15px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.2s;
+    background-color: #f9f9f9;
+    
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9e7;
+    color: #000;
+    
+}
+
+tbody tr:nth-child(even) td {
+    padding: 10px 15px;
+    color: #000;
+}
+
+
+td {
+    padding: 10px 15px;
+    color: #000;
+}
+
+.number {
+    font-weight: 600;
+    color: #000;
+    width: 70px;
+}
+
+.name {
+    font-weight: 500;
+}
