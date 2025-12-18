@@ -185,21 +185,40 @@
                 <h2>Informacion legal</h2>
             </div>
             <ul class="footer__list">
-                <li class="footer__item__list">Naturaleza Jurídica</li>
-                <li class="footer__item__list">Derechos Pecuniarios</li>
-                <li class="footer__item__list">Costos de Reproducción</li>
-                <li class="footer__item__list">Registros SIC</li>
-                <li class="footer__item__list">Estados Financieros</li>
-                <li class="footer__item__list">Presupuesto</li>
-                <li class="footer__item__list">Rendición de Cuentas</li>
-                <li class="footer__item__list">Elecciones</li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/universidad/naturaleza-juridica">Naturaleza Jurídica</a></li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/informacion-de-la-entidad/decisiones-que-puede-afectar-al-publico/derechos-pecuniarios">Derechos
+                        Pecuniarios</a></li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/datos-abiertos/instrumentos-de-gestion-de-la-informacion/costos-de-reproduccion">Costos
+                        de Reproducción</a></li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/informacion-de-interes/registros-sic">Registros SIC</a></li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/contratacion/manual-de-contratacion">Estatutos de
+                        Contratación
+                    </a>
+                </li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/planeacion/presupuesto/estados-financieros">Estados
+                        Financieros</a>
+                </li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/planeacion/presupuesto/presupuesto-general">Presupuesto</a>
+                </li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/planeacion/participacion-en-la-formulacion-de-politicas/rendicion-de-cuentas">Rendición
+                        de Cuentas</a></li>
             </ul>
             <div class="lista__titulo">
                 <img src="" alt="">
                 <h2>Certificaciones</h2>
             </div>
             <ul class="footer__list">
-                <li class="footer__item__list">Certificaciones y Acreditaciones</li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/datos-abiertos/accesibilidad-y-seguridad">Certificaciones y
+                        Acreditaciones</a></li>
             </ul>
         </div>
 
@@ -211,9 +230,13 @@
             <ul class="footer__list">
                 <li class="footer__item__list">
                     <img src="" alt="">
-                    <p>Defensa Pública y Prevención del Daño Antijurídico</p>
+                    <p><a
+                            href="https://unicartagena.edu.co/planeacion/defensa-publica-y-prevencion-del-dano-antijuridico">Defensa
+                            Pública y Prevención del Daño Antijurídico</a></p>
                 </li>
-                <li class="footer__item__list">juridica@unicartagena.edu.co</li>
+                <li class="footer__item__list"><a
+                        href="https://unicartagena.edu.co/mecanismos-de-contacto/notificaciones-judiciales">juridica@unicartagena.edu.co</a>
+                </li>
             </ul>
             <div class="logos">
                 <img src="{{ asset('images/mintic.svg') }}" alt="Logo del gobierno" class="mintic__icon">
@@ -232,7 +255,8 @@
         <p>Resolución N° 003095 del 18 de marzo de 2024. Ministerio de Educación Nacional</p>
     </div>
     <div class="footer__sistema">
-        <a href="">Ministerio de Tecnologías de la Información y las Comunicaciones - Universidad De Cartagena</a>
+        <a href="">Ministerio de Tecnologías de la Información y las Comunicaciones - Universidad De
+            Cartagena</a>
     </div>
 
 </section>
