@@ -20,4 +20,7 @@ Route::get('/carpetas', function () {
 
 Route::get('/pdfs/{id}', [PdfController::class, 'show'])->name('pdfs.show');
 
+Route::get('/colaboradores', function () {
+    return view('colaboradores');
+});
 
