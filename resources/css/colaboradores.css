@@ -2,8 +2,10 @@
     width: 100%;
     height: fit-content;
     padding: 4rem 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-bottom: 2vh solid var(--color-primario);
-
 }
 
 .collaboradores__page h2 {
@@ -12,7 +14,6 @@
     text-align: center;
     width: 70%;
     margin: 2rem auto;
-
 }
 
 .colab1 .colab-icons {
@@ -26,9 +27,7 @@
 }
 
 .colab-icons p {
-    background: linear-gradient(90deg,
-            #7f00ff,
-            #e100ff);
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -63,7 +62,6 @@
     justify-content: center;
     align-items: center;
     gap: 10vw;
-
 }
 
 .colaborador {
@@ -76,7 +74,8 @@
 
 .colab-img {
     position: relative;
-    width: 6vw;
+    width: 15vw;
+    max-width: 250px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
@@ -86,17 +85,12 @@
     inset: 0;
     border-radius: 50%;
 
-    background: conic-gradient(aqua 0deg 288deg,
-            transparent 288deg 360deg);
+    background: conic-gradient(aqua 0deg 288deg, transparent 288deg 360deg);
 
-    mask: radial-gradient(circle,
-            transparent 65%,
-            black 62%);
+    mask: radial-gradient(circle, transparent 65%, black 62%);
 
     z-index: 1;
 }
-
-
 
 .colab-img img {
     position: absolute;
@@ -107,7 +101,6 @@
     border-radius: 50%;
     z-index: 2;
 }
-
 
 .colab-name {
     position: relative;
@@ -126,10 +119,12 @@
     width: 100%;
     height: 3px;
 
-    background: linear-gradient(to right,
-            aqua 0% 25%,
-            transparent 25% 75%,
-            aqua 75% 100%);
+    background: linear-gradient(
+        to right,
+        aqua 0% 25%,
+        transparent 25% 75%,
+        aqua 75% 100%
+    );
 }
 
 .colab-name h3 {
@@ -148,27 +143,25 @@
     padding: 0.5rem;
 }
 
-
-
-.docentes_tutores{
+.docentes_tutores {
     display: flex;
     gap: 2rem;
 }
-.docentes{
+.docentes {
     width: 40%;
 }
-.tutores{
+.tutores {
     width: 60%;
 }
-.tutores__table__section{
+.tutores__table__section {
     display: flex;
     gap: 2rem;
 }
-.t-tutores{
+.t-tutores {
     width: 50%;
 }
 
-.colab__title{
+.colab__title {
     width: 100%;
     background-color: aqua;
     max-height: 50px;
@@ -177,11 +170,47 @@
     margin-bottom: 1rem;
     border-radius: 8px;
 }
-.colab__title h2{
+.colab__title h2 {
     font-size: 1rem;
     font-weight: 700;
     color: #034069;
 }
+
+.production_team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.production-wrapper {
+    width: 35%; /* igual que el card de docentes */
+    max-width: 900px;
+}
+
+.production__table__section {
+    width: 100%;
+}
+
+.t-production {
+    width: 100%;
+}
+
+.colab__title__production {
+    width: 100%;
+    background-color: aqua;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    justify-content: center;
+}
+.colab__title__production h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #034069;
+}
+
 .table-container {
     overflow-x: auto;
     border-radius: 8px;
@@ -220,20 +249,17 @@ tbody tr {
     border-bottom: 1px solid #f1f1f1;
     transition: background-color 0.2s;
     background-color: #f9f9f9;
-    
 }
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9e7;
     color: #000;
-    
 }
 
 tbody tr:nth-child(even) td {
     padding: 10px 15px;
     color: #000;
 }
-
 
 td {
     padding: 10px 15px;
@@ -251,34 +277,56 @@ td {
 }
 
 @media (max-width: 768px) {
-    .colab-row{
+    .colab-row {
         flex-direction: column;
     }
-    .colaborador{
+    .colaborador {
         width: 80%;
     }
-    .colab-img{
+    .colab-img {
         width: 50%;
     }
-    .collaboradores__page{
+    .collaboradores__page {
         background-position: center;
         background-size: cover;
     }
-    .docentes_tutores{
+    .docentes_tutores {
         flex-direction: column;
     }
-    .docentes{
+    .docentes {
         width: 100%;
     }
-    .tutores{
+    .tutores {
         width: 100%;
     }
-    .tutores__table__section{
+    .tutores__table__section {
         width: 100%;
         gap: 1rem;
         flex-direction: column;
     }
-    .t-tutores{
+    .t-tutores {
+        width: 100%;
+    }
+
+    .production_team {
+        justify-content: center;
+    }
+
+    .production-wrapper {
+        width: 100%; /* ocupar todo el ancho disponible */
+        max-width: 100%; /* sin límite fijo */
+        padding: 0 1rem; /* margen lateral similar al resto */
+    }
+
+    .colab__title__production {
+        width: 100%;
+    }
+
+    .production__table__section {
+        width: 100%;
+    }
+
+    .t-production {
         width: 100%;
     }
 }
