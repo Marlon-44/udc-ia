@@ -6,23 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>@yield('title')</title>
 
     {{-- Cargar Vite SOLO UNA VEZ --}}
-    @vite([
-    'resources/css/app.css',
-    'resources/css/header.css',
-    'resources/js/app.js',
-    'resources/css/bannerBusqueda.css',
-    'resources/css/comunidades.css',
-    'resources/css/repositoriosPagination.css',
-    'resources/css/herramientaCard.css',
-    'resources/css/footer.css',
-    'resources/css/carpetaCard.css',
-    'resources/css/pdfs.css',
-    'resources/css/tool__info.css'])
+    @vite(['resources/css/app.css', 'resources/css/header.css', 'resources/js/app.js', 'resources/css/bannerBusqueda.css', 'resources/css/comunidades.css', 'resources/css/repositoriosPagination.css', 'resources/css/herramientaCard.css', 'resources/css/footer.css', 'resources/css/carpetaCard.css', 'resources/css/pdfs.css', 'resources/css/tool__info.css'])
 
     @stack('styles')
 </head>
