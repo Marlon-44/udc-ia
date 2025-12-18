@@ -183,17 +183,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/RosarioBlanco.png') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>Rosario Blanco Bello</h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente investigadora</h3>
             </div>
         </div>
         <div class="colaborador colab1">
@@ -207,17 +207,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/Davide.jpeg') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>Davide Riccardi</h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente Investigador</h3>
             </div>
         </div>
         <div class="colaborador colab1">
@@ -231,17 +231,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/JohnJurado.jpg') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>John Jairo Jurado Coronel</h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente Investigador</h3>
             </div>
         </div>
     </div>
@@ -258,17 +258,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/JoseMorelos.png') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>José Morelos Gómez</h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente Investigador</h3>
             </div>
         </div>
         <div class="colaborador colab1">
@@ -282,17 +282,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/AndresCalderon.jpg') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>Andrés Felipe Calderón Ochoa </h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente Investigador</h3>
             </div>
         </div>
         <div class="colaborador colab1">
@@ -306,17 +306,17 @@
             <div class="colab-img">
                 <div class="colab-border"></div>
 
-                <img src="{{ asset('images/JuanCarlosVergara.jpg') }}"
+                <img src="{{ asset('images/EdwinMora1.jpg') }}"
                     alt="Logo UDC"
                     class="udc__logo">
             </div>
 
             <div class="colab-name">
-                <h3>Juan Carlos Vergara Schmalbach</h3>
+                <h3>Edwin Mora Cepeda</h3>
             </div>
 
             <div class="colab-job">
-                <h3>Coordinador General</h3>
+                <h3>Docente Investigador</h3>
             </div>
         </div>
     </div>

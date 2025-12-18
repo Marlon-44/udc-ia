@@ -249,3 +249,36 @@ td {
 .name {
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .colab-row{
+        flex-direction: column;
+    }
+    .colaborador{
+        width: 80%;
+    }
+    .colab-img{
+        width: 50%;
+    }
+    .collaboradores__page{
+        background-position: center;
+        background-size: cover;
+    }
+    .docentes_tutores{
+        flex-direction: column;
+    }
+    .docentes{
+        width: 100%;
+    }
+    .tutores{
+        width: 100%;
+    }
+    .tutores__table__section{
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .t-tutores{
+        width: 100%;
+    }
+}
