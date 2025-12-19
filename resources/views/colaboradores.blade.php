@@ -434,54 +434,42 @@
                         </tr>
                         <tr>
                             <td class="number">21</td>
-                            <td class="name">Yicky Morillo Gómez</td>
-                        </tr>
-                        <tr>
-                            <td class="number">22</td>
                             <td class="name">Yuleidis Mesa González</td>
                         </tr>
                         <tr>
-                            <td class="number">23</td>
-                            <td class="name">Camilo Bustamante Arias</td>
-                        </tr>
-                        <tr>
-                            <td class="number">24</td>
-                            <td class="name">Cristian Alberto Espinosa Fuentes</td>
-                        </tr>
-                        <tr>
-                            <td class="number">25</td>
+                            <td class="number">22</td>
                             <td class="name">Héctor Julio Morantes Díaz</td>
                         </tr>
                         <tr>
-                            <td class="number">26</td>
+                            <td class="number">23</td>
                             <td class="name">Heidy Montes Garcés</td>
                         </tr>
                         <tr>
-                            <td class="number">27</td>
+                            <td class="number">24</td>
                             <td class="name">Ilkelis Kaina Carrillo Solano</td>
                         </tr>
                         <tr>
-                            <td class="number">28</td>
+                            <td class="number">25</td>
                             <td class="name">John Henry Cuestas Roa</td>
                         </tr>
                         <tr>
-                            <td class="number">29</td>
+                            <td class="number">26</td>
                             <td class="name">Juan David Lombana</td>
                         </tr>
                         <tr>
-                            <td class="number">30</td>
+                            <td class="number">27</td>
                             <td class="name">Korina Tribiño Carazo</td>
                         </tr>
                         <tr>
-                            <td class="number">31</td>
+                            <td class="number">28</td>
                             <td class="name">Laura Peralta Gómez</td>
                         </tr>
                         <tr>
-                            <td class="number">32</td>
+                            <td class="number">29</td>
                             <td class="name">Natalia Torres Luenga</td>
                         </tr>
                         <tr>
-                            <td class="number">33</td>
+                            <td class="number">30</td>
                             <td class="name">Yiczy Leidy Morillo Gómez</td>
                         </tr>
                     </tbody>

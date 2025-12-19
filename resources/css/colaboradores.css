@@ -286,6 +286,13 @@ td {
     .colab-img {
         width: 50%;
     }
+    .colab-name h3 {
+        font-size: 0.8rem;
+        color: #fff;
+        z-index: 6;
+        position: relative;
+    }
+
     .collaboradores__page {
         background-position: center;
         background-size: cover;
