@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Repositorio Digital | Univesidad de Cartagena | Colaboradores')
+@section('title', 'Repositorio Digital | Universidad de Cartagena | Colaboradores')
 
 @section('content')
 
     <div class="collaboradores__page" style="background-image: url('images/bg.jpg')">
-        <h2>PROGRAMA DE FORTALECIMIENTO DE HABILIDADES Y HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL PARA EL SECTOR PÚBLICO - 
-            Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC) y Universidad de Cartagena</h2>
+        <h2>PROGRAMA DE FORTALECIMIENTO DE HABILIDADES Y HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL PARA EL SECTOR
+            PÚBLICO -
+            Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC) y Universidad de Cartagena
+        </h2>
 
         <div class="colab-row">
             <div class="colaborador colab1">
@@ -14,12 +16,10 @@
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/JuanCarlosVergara.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -28,9 +28,8 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinador General</h3>
+                    <h3>Coordinador general</h3>
                 </div>
-
             </div>
         </div>
 
@@ -40,46 +39,41 @@
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/FranciscoMaza.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
                 <div class="colab-name">
-                    <h3>Francisco Javier Maza Avila</h3>
+                    <h3>Francisco Javier Maza Ávila</h3>
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinador Academico</h3>
+                    <h3>Coordinador académico</h3>
                 </div>
-
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/OscarZuniga.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
                 <div class="colab-name">
-                    <h3>Oscar Enrique Zúñiga Fernández</h3>
+                    <h3>Óscar Enrique Zúñiga Fernández</h3>
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinador Academico</h3>
+                    <h3>Coordinador académico</h3>
                 </div>
-
             </div>
         </div>
 
@@ -89,35 +83,31 @@
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/Eyvis.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
                 <div class="colab-name">
-                    <h3>Eyvis Lucia Marrugo Batista</h3>
+                    <h3>Eyvis Lucía Marrugo Batista</h3>
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinadora Tecnologíca</h3>
+                    <h3>Coordinadora tecnológica</h3>
                 </div>
-
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/Henry.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -126,21 +116,19 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinador Tecnologíco</h3>
+                    <h3>Coordinador tecnológico</h3>
                 </div>
-
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/MariaFernandaMartiez.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -149,14 +137,12 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Coordinadora de Comunicaciones</h3>
+                    <h3>Coordinadora de comunicaciones</h3>
                 </div>
-
             </div>
         </div>
-
-
     </div>
+
     <div class="collaboradores__page" style="background-image: url('images/bg.jpg')">
         <h2>IDENTIFICACIÓN Y SOCIALIZACIÓN DE BUENAS PRÁCTICAS EN EL USO DE IA</h2>
         <div class="colab-row">
@@ -165,12 +151,10 @@
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/RosarioBlanco.png') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -182,17 +166,16 @@
                     <h3>Docente investigadora</h3>
                 </div>
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/Davide.jpeg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -201,21 +184,20 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Docente Investigador</h3>
+                    <h3>Docente investigador</h3>
                 </div>
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
-                    <img src="{{ asset('images/JohnJurado.jpg') }}" alt="Logo UDC" class="udc__logo">
+                    <img src="{{ asset('images/JohnJurado.jpeg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
                 <div class="colab-name">
@@ -223,10 +205,11 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Docente Investigador</h3>
+                    <h3>Docente investigador</h3>
                 </div>
             </div>
         </div>
+
         <h2>DESARROLLO DE RECOMENDACIONES Y LINEAMIENTOS PARA EL USO DE IA</h2>
         <div class="colab-row">
             <div class="colaborador colab1">
@@ -234,12 +217,10 @@
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/JoseMorelos.png') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -248,42 +229,40 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Docente Investigador</h3>
+                    <h3>Docente investigador</h3>
                 </div>
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/AndresCalderon.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
                 <div class="colab-name">
-                    <h3>Andrés Felipe Calderón Ochoa </h3>
+                    <h3>Andrés Felipe Calderón Ochoa</h3>
                 </div>
 
                 <div class="colab-job">
-                    <h3>Docente Investigador</h3>
+                    <h3>Docente investigador</h3>
                 </div>
             </div>
+
             <div class="colaborador colab1">
                 <div class="colab-icons">
                     <p class="icon1">o</p>
                     <p class="icon2">+</p>
                     <p class="icon3">+</p>
-
                 </div>
 
                 <div class="colab-img">
                     <div class="colab-border"></div>
-
                     <img src="{{ asset('images/EdwinMora1.jpg') }}" alt="Logo UDC" class="udc__logo">
                 </div>
 
@@ -292,11 +271,12 @@
                 </div>
 
                 <div class="colab-job">
-                    <h3>Docente Investigador</h3>
+                    <h3>Docente investigador</h3>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="collaboradores__page docentes_tutores" style="background-image: url('images/bg.jpg')">
         <div class="docentes ">
             <div class="colab__title">
@@ -307,17 +287,17 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Nombre Completo</th>
+                            <th>Nombre completo</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="number">1</td>
-                            <td class="name">Alejandro Jose Madero Casadiego</td>
+                            <td class="name">Alejandro José Madero Casadiego</td>
                         </tr>
                         <tr>
                             <td class="number">2</td>
-                            <td class="name">Diego Sain Pezzano Ramírez</td>
+                            <td class="name">Diego Saín Pezzano Ramírez</td>
                         </tr>
                         <tr>
                             <td class="number">3</td>
@@ -333,7 +313,7 @@
                         </tr>
                         <tr>
                             <td class="number">6</td>
-                            <td class="name">Marilin Ibeth Oviedo Contreras</td>
+                            <td class="name">Marilín Ibeth Oviedo Contreras</td>
                         </tr>
                         <tr>
                             <td class="number">7</td>
@@ -357,7 +337,7 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Nombre Completo</th>
+                            <th>Nombre completo</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -371,7 +351,7 @@
                         </tr>
                         <tr>
                             <td class="number">3</td>
-                            <td class="name">Carla De Avila Altamiranda</td>
+                            <td class="name">Carla De Ávila Altamiranda</td>
                         </tr>
                         <tr>
                             <td class="number">4</td>
@@ -379,7 +359,7 @@
                         </tr>
                         <tr>
                             <td class="number">5</td>
-                            <td class="name">Cristina Del Carmen Cepeda Maloof</td>
+                            <td class="name">Cristina del Carmen Cepeda Maloof</td>
                         </tr>
                         <tr>
                             <td class="number">6</td>
@@ -395,7 +375,7 @@
                         </tr>
                         <tr>
                             <td class="number">9</td>
-                            <td class="name">Farid Camilo Baquedo Fernández</td>
+                            <td class="name">Farid Camilo Baquero Fernández</td>
                         </tr>
                         <tr>
                             <td class="number">10</td>
@@ -423,7 +403,7 @@
                         </tr>
                         <tr>
                             <td class="number">16</td>
-                            <td class="name">María Margarita Cuellar</td>
+                            <td class="name">María Margarita Cuéllar</td>
                         </tr>
                         <tr>
                             <td class="number">17</td>
@@ -436,13 +416,13 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Nombre Completo</th>
+                            <th>Nombre completo</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="number">18</td>
-                            <td class="name">Martin Fernández Tamayo</td>
+                            <td class="name">Martín Fernández Tamayo</td>
                         </tr>
                         <tr>
                             <td class="number">19</td>
@@ -470,7 +450,7 @@
                         </tr>
                         <tr>
                             <td class="number">25</td>
-                            <td class="name">Héctor Julio Morantes Diaz</td>
+                            <td class="name">Héctor Julio Morantes Díaz</td>
                         </tr>
                         <tr>
                             <td class="number">26</td>
@@ -478,7 +458,7 @@
                         </tr>
                         <tr>
                             <td class="number">27</td>
-                            <td class="name">Ikelis Kaina Carrillo Solano</td>
+                            <td class="name">Ilkelis Kaina Carrillo Solano</td>
                         </tr>
                         <tr>
                             <td class="number">28</td>
@@ -522,7 +502,7 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>Nombre Completo</th>
+                                <th>Nombre completo</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -572,6 +552,5 @@
             </div>
         </div>
     </div>
-
 
 @endsection
