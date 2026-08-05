@@ -5,7 +5,7 @@
 
         <div class="header__actions">
 
-            <button class="action-btn">
+            {{-- <button class="action-btn">
                 <img src="{{ asset('images/search__icon.svg') }}" alt="Buscar" class="icon search__icon">
 
             </button>
@@ -13,12 +13,12 @@
             <button class="action-btn">
                 <img src="{{ asset('images/world.png') }}" alt="Cambiar idioma" class="icon world__icon">
 
-            </button>
+            </button> --}}
 
-            <button class="login-btn">
+            {{-- <button class="login-btn">
                 <h3>Iniciar Sesión</h3>
                 <img src="{{ asset('images/dropdown.png') }}" alt="Icono usuario" class="icon user__icon">
-            </button>
+            </button> --}}
 
             <button class="action-btn nav__btn">
                 <img src="{{ asset('images/burger__menu.png') }}" alt="Icono usuario" class="icon world__icon">
@@ -30,12 +30,13 @@
 
     <div class="header__brand">
         <img src="{{ asset('images/Logo MinTic.png') }}" alt="Logo MinTic" class="minTic__logo">
-        
+
         <img src="{{ asset('images/logo__udc.svg') }}" alt="Logo UDC" class="udc__logo">
     </div>
 
     <nav class="header__nav">
         <a href="{{ asset('/') }}" class="nav__option">Inicio</a>
+        <a href="{{ asset('/catalogo-ia') }}" class="nav__option">Oferta IA</a>
         <a href="{{ asset('/colaboradores') }}" class="nav__option">Colaboradores</a>
 
         <!-- <a href="#" class="nav__option">Comunidades</a> -->

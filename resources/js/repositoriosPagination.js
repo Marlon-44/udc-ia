@@ -65,16 +65,13 @@ window.renderPage = function () {
         const descripcion = reg.descripcion ?? "Sin descripción";
         const enlace = reg.enlace ?? "#";
         const video = reg.video ?? "#";
-        const BASE_URL = "/udc-ia/public";
 
         const card = `
-        <a href="${BASE_URL}/info/${encodeURIComponent(
+        <a href="/info/${encodeURIComponent(
             nombre
         )}" class="herramienta__link">
             <div class="herramienta__card">
-                <img src="${
-                    reg.logo ? BASE_URL.concat(thumbnail) : thumbnail
-                }" alt="Miniatura del video" class="card__img">
+                <img src="${thumbnail}" alt="Miniatura del video" class="card__img">
                 <div class="herramienta__card__content">
                     <h5 class="herramienta__card__title">${nombre}</h5>
                     <p class="herramienta__card__description">${descripcion}</p>

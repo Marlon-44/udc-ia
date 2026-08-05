@@ -1,0 +1,374 @@
+.catalogoIA__hero {
+    width: 100%;
+    padding: 3rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.catalogoIA__subtitulo {
+    max-width: 60rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.catalogoIA__section {
+    width: 85%;
+    margin: 2rem auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.catalogoIA__filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #f6f8fc;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.catalogoIA__filtros .search-bar {
+    background: #ffffff;
+    box-shadow: none;
+    border: 1px solid #e0e5ee;
+}
+
+.catalogoIA__filtros .search-bar input {
+    color: #1a1a1a;
+}
+
+.catalogoIA__selects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.catalogoIA__selects .filter__option__btn {
+    width: auto;
+    flex: 1 1 160px;
+    background: #ffffff;
+    border: 1px solid #e0e5ee;
+    color: #1a1a1a;
+}
+
+#ciaLimpiarFiltros {
+    flex: 0 0 auto;
+    background: #eef1f7;
+}
+
+.catalogoIA__vista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.catalogoIA__contador {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.catalogoIA__vista__botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cia-download-btn {
+    background: #eef1f7;
+    border-color: #d8dee9;
+    color: #333;
+}
+
+.cia-download-btn:hover {
+    background: var(--color-primario);
+    border-color: var(--color-primario);
+    color: #fff;
+}
+
+.cia-view-btn {
+    border: 1px solid var(--color-primario);
+    background: #fff;
+    color: var(--color-primario);
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.cia-view-btn.active,
+.cia-view-btn:hover {
+    background: var(--color-primario);
+    color: #fff;
+}
+
+.catalogoIA__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.catalogoIA__grid.hidden,
+.catalogoIA__tabla.hidden {
+    display: none;
+}
+
+.cia-card {
+    width: 30%;
+    min-width: 320px;
+    background: #ffffff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cia-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.205);
+}
+
+.cia-card__banner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.cia-banner--politica {
+    background: linear-gradient(135deg, #2563eb, #1c4aad);
+}
+
+.cia-banner--gobernanza {
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+
+.cia-banner--formacion {
+    background: linear-gradient(135deg, #0ea5a4, #34d399);
+}
+
+.cia-banner--investigacion {
+    background: linear-gradient(135deg, #4338ca, #6366f1);
+}
+
+.cia-banner--herramientas {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+}
+
+.cia-banner--adopcion {
+    background: linear-gradient(135deg, #0891b2, #22d3ee);
+}
+
+.cia-banner--datos {
+    background: linear-gradient(135deg, #db2777, #f472b6);
+}
+
+.cia-banner--articulacion {
+    background: linear-gradient(135deg, #b45309, #f59e0b);
+}
+
+.cia-banner--default {
+    background: linear-gradient(135deg, #64748b, #94a3b8);
+}
+
+.cia-card__anio {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.cia-card__id {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+}
+
+.cia-card__body {
+    padding: 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+    height: 100%;
+}
+
+.cia-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.35;
+}
+
+.cia-card__desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.cia-card__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+.cia-card__buttons button,
+.cia-card__buttons a,
+.cia-card__buttons span {
+    flex: 1;
+    text-align: center;
+    padding: 0.6rem 0;
+    border-radius: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.cia-btn-ficha {
+    background: var(--color-primario);
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.cia-btn-ficha:hover {
+    background: var(--color-secundario);
+    transform: scale(0.98);
+}
+
+.cia-btn-consultar {
+    background: #f2f2f2;
+    color: #333;
+}
+
+.cia-btn-consultar:hover {
+    background: #e5e5e5;
+}
+
+.cia-btn-consultar.disabled {
+    background: #dcdcdc;
+    color: #888;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.cia-badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.cia-badge--publica {
+    background: #e4f7ea;
+    color: #1c7a3f;
+}
+
+.cia-badge--mixta {
+    background: #fff2d9;
+    color: #9a6300;
+}
+
+.cia-badge--privada {
+    background: #eee4fb;
+    color: #5b2ea6;
+}
+
+@media (max-width: 768px) {
+    .cia-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.catalogoIA__tabla table {
+    font-size: 0.82rem;
+}
+
+.catalogoIA__tabla td {
+    color: #333;
+}
+
+.catalogoIA__sin__resultados {
+    text-align: center;
+    color: #777;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+/* Ficha de detalle (modal) */
+.catalogoIA__modal dl {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 0.6rem 1rem;
+    margin: 0;
+}
+
+.catalogoIA__modal dt {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.catalogoIA__modal dd {
+    margin: 0;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .catalogoIA__section {
+        width: 92%;
+    }
+
+    .catalogoIA__selects .filter__option__btn {
+        flex: 1 1 100%;
+    }
+
+    .catalogoIA__vista {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catalogoIA__modal dl {
+        grid-template-columns: 1fr;
+    }
+}

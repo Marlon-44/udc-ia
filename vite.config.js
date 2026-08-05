@@ -18,7 +18,8 @@ export default defineConfig({
                 "resources/js/templatesComponents/carpetaCardTemplate.js",
                 "resources/css/pdfs.css",
                 "resources/css/tool__info.css",
-                "resources/css/colaboradores.css"
+                "resources/css/colaboradores.css",
+                "resources/css/catalogoIA.css",
             ],
             refresh: true,
         }),

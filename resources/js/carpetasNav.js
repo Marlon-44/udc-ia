@@ -3,8 +3,6 @@ import carpetaCard from "./templatesComponents/carpetaCardTemplate";
 const container = document.getElementById("carpetas-container");
 console.log("carpetasNav JS cargado");
 
-const BASE_URL = "/udc-ia/public";
-
 const colors = [
     "#F2C14E",
     "#6CCFF6",

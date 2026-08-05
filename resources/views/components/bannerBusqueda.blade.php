@@ -21,6 +21,14 @@
                 <p>Explora multiples casos de aplicacion de herramientas de IA</p>
             </div>
         </a>
+
+        <a href="{{ asset('/catalogo-ia') }}" class="img__link">
+            <img src="{{ asset('images/oferta.png') }}" alt="">
+            <div class="cover">
+                <h3>Catálogo Único de Oferta IA</h3>
+                <p>Consulta la oferta pública en Inteligencia Artificial del Estado colombiano</p>
+            </div>
+        </a>
     </div>
 
 
@@ -92,6 +100,6 @@
             </div>
 
         </div> -->
-    </div>
+    {{-- </div> --}}
 
 </section>

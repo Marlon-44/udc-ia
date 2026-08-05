@@ -7,4 +7,5 @@ import "./repositoriosPagination";
 import "./mobileMenu";
 import "./carpetasNav"
 import "./renderPdfsPage"
+import "./catalogoIA";
 import "./filtros";

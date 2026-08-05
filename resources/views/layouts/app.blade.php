@@ -10,6 +10,19 @@
         rel="stylesheet">
     <title>@yield('title')</title>
 
+    <meta name="description" content="@yield('description', 'Repositorio Digital de Inteligencia Artificial de la Universidad de Cartagena: herramientas, casos de éxito y oferta pública en IA.')">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:description" content="@yield('description', 'Repositorio Digital de Inteligencia Artificial de la Universidad de Cartagena: herramientas, casos de éxito y oferta pública en IA.')">
+    <meta property="og:image" content="@yield('og_image', asset('images/oferta.png'))">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title')">
+    <meta name="twitter:description" content="@yield('description', 'Repositorio Digital de Inteligencia Artificial de la Universidad de Cartagena: herramientas, casos de éxito y oferta pública en IA.')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/oferta.png'))">
+
     {{-- Cargar Vite SOLO UNA VEZ --}}
     @vite([
     'resources/css/app.css',
@@ -23,7 +36,8 @@
     'resources/css/carpetaCard.css',
     'resources/css/pdfs.css',
     'resources/css/tool__info.css',
-    'resources/css/colaboradores.css'])
+    'resources/css/colaboradores.css',
+    'resources/css/catalogoIA.css'])
 
     @stack('styles')
 </head>

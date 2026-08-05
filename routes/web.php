@@ -24,3 +24,6 @@ Route::get('/colaboradores', function () {
     return view('colaboradores');
 });
 
+Route::get('/catalogo-ia', function () {
+    return view('catalogoIA');
+});
